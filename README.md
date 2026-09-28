@@ -1,5 +1,4 @@
-[![License: CERN-OHL-S-2.0](https://img.shields.io/badge/License-CERN--OHL--S--2.0-blue.svg)](https://ohwr.org/cern_ohl_s_v2.txt)
-
+![License: CERN-OHL-S-2.0](https://img.shields.io/badge/License-CERN--OHL--S--2.0-blue.svg)
 ![KiCad](https://img.shields.io/badge/KiCad-10-314CB0?logo=kicad&logoColor=white)
 ![Open Source Hardware](https://img.shields.io/badge/Open%20Source-Hardware-2E7D32?logo=opensourcehardware&logoColor=white)
 ![Fab: JLCPCB](https://img.shields.io/badge/Fab-JLCPCB-1F6FD1?logo=jlcpcb&logoColor=white)
