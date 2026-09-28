@@ -2,6 +2,8 @@
 ![Open Source Hardware](https://img.shields.io/badge/Open%20Source-Hardware-2E7D32?logo=opensourcehardware&logoColor=white)
 ![KiCad](https://img.shields.io/badge/KiCad-10-314CB0?logo=kicad&logoColor=white)
 
+<img src="./gnimu-mark-silkscreen.svg" alt="Gnimu wordmark" width="100" height="100">
+
 # License & Terms
 
 This source describes Open Hardware and is licensed under [CERN-OHL-S v2][CERN-OHL-S_v2]. You may redistribute and modify this source and make products using it under the terms of this license. Please see the text of CERN-OHL-S v2 for all applicable conditions that apply.
