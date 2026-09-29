@@ -1,2 +1,10 @@
 # Mac stuff
 .DS_Store
+
+# KiCAD stuff
+*-backups/
+*.lck
+fp-info-cache
+_autosave-*
+*.kicad_prl
+gerbers/
