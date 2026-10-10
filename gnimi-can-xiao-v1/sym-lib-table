@@ -1,0 +1,4 @@
+(sym_lib_table
+	(version 7)
+	(lib (name "Gnimu") (type "KiCad") (uri "/Users/chris/GitHub/Gnimu-PCB/Gnimu-libraries/Gnimu.kicad_sym") (options "") (descr ""))
+)
