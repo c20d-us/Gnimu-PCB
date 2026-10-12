@@ -1,10 +1,16 @@
+<p>
+  <img src="branding/svg/gnimu-icon-default-rounded.svg" alt="Gnimu icon" height="72">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="branding/wordmark/gnimu-wordmark-transparent-white.svg">
+    <img src="branding/wordmark/gnimu-wordmark-transparent-navy.svg" alt="gnimu" height="72">
+  </picture>
+</p>
+
+# Gnimu PCBs
+
 ![License: CERN-OHL-S-2.0](https://img.shields.io/badge/License-CERN--OHL--S--2.0-blue.svg)
 ![Open Source Hardware](https://img.shields.io/badge/Open%20Source-Hardware-2E7D32?logo=opensourcehardware&logoColor=white)
 ![KiCad](https://img.shields.io/badge/KiCad-10-314CB0?logo=kicad&logoColor=white)
-
-<img src="./silkscreen-logos/gnimu-silkscreen-scalable.svg" alt="Gnimu logo" width="100" height="100">
-
-# Gnimu PCBs
 
 Circuit boards for [Gnimu](https://github.com/c20d-us/Gnimu), a GNSS+IMU motorsports telemetry device that emulates the streaming-telemetry function of a RaceBox Mini over BLE.
 
