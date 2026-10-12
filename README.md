@@ -51,6 +51,7 @@ boards/
   gnimu-can/             The CAN carrier (work in progress)
 libraries/               Shared KiCad symbols (Gnimu.kicad_sym) and footprints (Gnimu.pretty)
 silkscreen-logos/        The Gnimu logo as SVG, sized for silkscreen
+branding/                The Gnimu icon and wordmark used in this README
 images/                  Board photos
 ```
 
