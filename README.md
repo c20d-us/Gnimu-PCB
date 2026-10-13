@@ -1,8 +1,8 @@
 <p>
-  <img src="branding/svg/gnimu-icon-default-rounded.svg" alt="Gnimu icon" height="72">
+  <img src="https://raw.githubusercontent.com/c20d-us/Gnimu-branding/main/svg/gnimu-icon-default-rounded.svg" alt="Gnimu icon" height="72">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="branding/wordmark/gnimu-wordmark-transparent-white.svg">
-    <img src="branding/wordmark/gnimu-wordmark-transparent-navy.svg" alt="gnimu" height="72">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/c20d-us/Gnimu-branding/main/wordmark/gnimu-wordmark-transparent-white.svg">
+    <img src="https://raw.githubusercontent.com/c20d-us/Gnimu-branding/main/wordmark/gnimu-wordmark-transparent-navy.svg" alt="gnimu" height="72">
   </picture>
 </p>
 
@@ -51,7 +51,6 @@ boards/
   gnimu-can/             The CAN carrier (work in progress)
 libraries/               Shared KiCad symbols (Gnimu.kicad_sym) and footprints (Gnimu.pretty)
 silkscreen-logos/        The Gnimu logo as SVG, sized for silkscreen
-branding/                The Gnimu icon and wordmark used in this README
 images/                  Board photos
 ```
 
@@ -74,5 +73,7 @@ This source describes Open Hardware and is licensed under [CERN-OHL-S v2][CERN-O
 This source is distributed WITHOUT ANY EXPRESS OR IMPLIED WARRANTY, INCLUDING OF MERCHANTABILITY, SATISFACTORY QUALITY AND FITNESS FOR A PARTICULAR PURPOSE.
 
 The Gnimu firmware is a separate work under its own license; see the [Gnimu](https://github.com/c20d-us/Gnimu) repository.
+
+The Gnimu name and logo, including the silkscreen logo on the boards, are not covered by this license. You may leave the logo on a board made from an unmodified design. If you modify a design, remove the logo. See the [Gnimu branding usage policy](https://github.com/c20d-us/Gnimu-branding/blob/main/LICENSE.md).
 
 [CERN-OHL-S_v2]: https://ohwr.org/cern_ohl_s_v2.txt
