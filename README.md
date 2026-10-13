@@ -12,7 +12,7 @@
 ![Open Source Hardware](https://img.shields.io/badge/Open%20Source-Hardware-2E7D32?logo=opensourcehardware&logoColor=white)
 ![KiCad](https://img.shields.io/badge/KiCad-10-314CB0?logo=kicad&logoColor=white)
 
-Circuit boards for [Gnimu](https://github.com/c20d-us/Gnimu), a GNSS+IMU motorsports telemetry device that emulates the streaming-telemetry function of a RaceBox Mini over BLE.
+Circuit boards for [Gnimu](https://github.com/c20d-us/Gnimu), a GNSS+IMU motorsports telemetry device that streams live position, speed, and motion data over BLE.
 
 This repository holds the hardware only: KiCad projects, the shared symbol and footprint library, and fabrication outputs. The firmware, the bill of materials, and the step-by-step build guides live in the [Gnimu](https://github.com/c20d-us/Gnimu) repository.
 
