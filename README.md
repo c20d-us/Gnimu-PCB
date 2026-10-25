@@ -37,9 +37,10 @@ This repository holds the hardware only: KiCad projects, the shared symbol and f
 |---|---|---|---|
 | [**Gnimu carrier (XIAO)**](boards/gnimu/) | [v1.1](boards/gnimu/gnimu-carrier-xiao-v1.1/) | Seeed XIAO nRF52840 Sense | Current design. Gerbers not yet added. |
 | | [v1](boards/gnimu/gnimu-carrier-xiao-v1/) | Seeed XIAO nRF52840 Sense | Fabricated and built. Gerbers included. |
-| [**Gnimu CAN carrier (XIAO)**](boards/gnimu-can/) | [v1](boards/gnimu-can/gnimu-can-xiao-v1/) | Seeed XIAO ESP32C6 | Work in progress. Schematic only. |
+| [**Gnimu-CAN OBD-II helper**](boards/gnimu-can/gnimu-can-obd-helper-v1/) | [v1.0](boards/gnimu-can/gnimu-can-obd-helper-v1/) | None | Ordered 2026-10-24. Not yet tested. |
+| [**Gnimu-CAN carrier (XIAO)**](boards/gnimu-can/) | [v1](boards/gnimu-can/gnimu-can-carrier-xiao-v1/) | Seeed XIAO ESP32C6 | Work in progress. Schematic only. |
 
-Every board is two-layer and through-hole only, built around off-the-shelf modules that solder straight onto it.
+Every board is two-layer and built for hand assembly. The carriers are through-hole only, built around off-the-shelf modules that solder straight onto them; the OBD-II helper adds one SOT-23 part.
 
 ---
 
@@ -48,7 +49,7 @@ Every board is two-layer and through-hole only, built around off-the-shelf modul
 ```
 boards/
   gnimu/                 The GNSS+IMU carrier, one folder per revision
-  gnimu-can/             The CAN carrier (work in progress)
+  gnimu-can/             Gnimu-CAN boards: the OBD-II helper and the CAN carrier (work in progress)
 libraries/               Shared KiCad symbols (Gnimu.kicad_sym) and footprints (Gnimu.pretty)
 silkscreen-logos/        The Gnimu logo as SVG, sized for silkscreen
 images/                  Board photos
