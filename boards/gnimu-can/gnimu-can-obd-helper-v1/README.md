@@ -2,7 +2,7 @@
 
 A small board that fits over the exposed pins on the back of a straight-pin J1962 (OBD-II) plug and breaks the car's CAN bus and 12V supply out to JST PH sockets. It saves soldering wires directly to the plug's pins.
 
-It is part of the Gnimu-CAN telemetry reader, which takes only CAN_H, CAN_L and GND from the car and runs from its own battery. The 12V socket is an optional extra and can be left unpopulated.
+It is part of the Gnimu-CAN telemetry reader. The CAN socket feeds either [CAN carrier](../); the 12V socket is needed only for the 12V carrier and can be left unpopulated for the LiPo one.
 
 > [!NOTE]
 > **Ordered, not yet tested.** v1.0 was ordered from OSH Park on 2026-10-24. Fit and assembly notes will be added once boards arrive and have been tried on a real plug.
@@ -47,8 +47,8 @@ Pin 1 is upper left and pin 16 lower right, viewed from the flange side. The pin
 
 There is **no fuse** and **no CAN termination** on the board:
 
-- If you use the 12V socket, put a fuse in the pigtail that plugs into it or fuse the link immediately after it lands on your board.
-- The car's bus is already terminated; don't add 120k termination to the CAN-H/CAN-L paths (or leave termination disabled if your transciever module supports that, as does the Adafruit CAN Pal).
+- If you use the 12V socket, fuse the link where it lands. The 12V carrier does this with a PTC fuse (F1) right at its input; anything else should have its own fuse.
+- The car's bus is already terminated. Don't add 120Ω termination across CAN_H and CAN_L, and leave a transceiver module's own termination switched off (the Adafruit CAN Pal has one).
 
 ---
 

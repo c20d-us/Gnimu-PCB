@@ -2339,7 +2339,7 @@
 			(uuid "39936998-28ea-4451-bc14-9043003b26d4")
 		)
 		(instances
-			(project "gnimu-can-carrier-xiao-v1"
+			(project "gnimu-can-carrier-xiao-lipo-v1"
 				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
 					(reference "#PWR011")
 					(unit 1)
@@ -2455,7 +2455,7 @@
 			(uuid "dc0161d2-cbb1-4064-813a-4a2e2873ea64")
 		)
 		(instances
-			(project "gnimu-can-carrier-xiao-v1"
+			(project "gnimu-can-carrier-xiao-lipo-v1"
 				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
 					(reference "U1")
 					(unit 1)
@@ -2533,7 +2533,7 @@
 			(uuid "be8cf4ab-c05c-4855-a5d7-b0f4623754a7")
 		)
 		(instances
-			(project "gnimu-can-carrier-xiao-v1"
+			(project "gnimu-can-carrier-xiao-lipo-v1"
 				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
 					(reference "#FLG03")
 					(unit 1)
@@ -2611,7 +2611,7 @@
 			(uuid "22e0070d-ef9d-40fc-9949-1aca82721fd6")
 		)
 		(instances
-			(project "gnimu-can-carrier-xiao-v1"
+			(project "gnimu-can-carrier-xiao-lipo-v1"
 				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
 					(reference "#PWR07")
 					(unit 1)
@@ -2689,7 +2689,7 @@
 			(uuid "15089989-86e3-43ce-81d4-54f56328893e")
 		)
 		(instances
-			(project "gnimu-can-carrier-xiao-v1"
+			(project "gnimu-can-carrier-xiao-lipo-v1"
 				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
 					(reference "#FLG02")
 					(unit 1)
@@ -2720,7 +2720,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "BATT_In"
+		(property "Value" "BATT_IN"
 			(at 102.87 78.7399 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2731,7 +2731,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal"
+		(property "Footprint" "Gnimu:Holes_1x02_P2.54mm"
 			(at 100.33 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -2771,7 +2771,7 @@
 			(uuid "0d51313d-d3ad-484c-b043-ac7b668f4ba4")
 		)
 		(instances
-			(project "gnimu-can-carrier-xiao-v1"
+			(project "gnimu-can-carrier-xiao-lipo-v1"
 				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
 					(reference "J3")
 					(unit 1)
@@ -2802,7 +2802,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "CAN_Helper_In"
+		(property "Value" "CAN_IN"
 			(at 54.61 77.4699 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2813,7 +2813,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_PH_S3B-PH-K_1x03_P2.00mm_Horizontal"
+		(property "Footprint" "Gnimu:Holes_1x03_P2.54mm"
 			(at 52.07 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -2856,7 +2856,7 @@
 			(uuid "a15313ee-550d-49c5-8704-09ff6275c4ef")
 		)
 		(instances
-			(project "gnimu-can-carrier-xiao-v1"
+			(project "gnimu-can-carrier-xiao-lipo-v1"
 				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
 					(reference "J1")
 					(unit 1)
@@ -2938,7 +2938,7 @@
 			(uuid "e918f637-584d-4ebc-95d9-773916fea857")
 		)
 		(instances
-			(project "gnimu-can-carrier-xiao-v1"
+			(project "gnimu-can-carrier-xiao-lipo-v1"
 				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
 					(reference "C1")
 					(unit 1)
@@ -3016,7 +3016,7 @@
 			(uuid "c250a8d3-72ff-4c51-b83f-3638422f89b4")
 		)
 		(instances
-			(project "gnimu-can-carrier-xiao-v1"
+			(project "gnimu-can-carrier-xiao-lipo-v1"
 				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
 					(reference "#PWR02")
 					(unit 1)
@@ -3094,7 +3094,7 @@
 			(uuid "3ada2fb2-703f-47d0-9661-beb19fedd133")
 		)
 		(instances
-			(project "gnimu-can-carrier-xiao-v1"
+			(project "gnimu-can-carrier-xiao-lipo-v1"
 				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
 					(reference "#PWR05")
 					(unit 1)
@@ -3172,7 +3172,7 @@
 			(uuid "f5c487ae-10b0-4844-a80f-5ee6a0049b3b")
 		)
 		(instances
-			(project "gnimu-can-carrier-xiao-v1"
+			(project "gnimu-can-carrier-xiao-lipo-v1"
 				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
 					(reference "#PWR014")
 					(unit 1)
@@ -3254,7 +3254,7 @@
 			(uuid "86950316-a0b7-47ec-b727-f555cbead019")
 		)
 		(instances
-			(project "gnimu-can-carrier-xiao-v1"
+			(project "gnimu-can-carrier-xiao-lipo-v1"
 				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
 					(reference "R1")
 					(unit 1)
@@ -3336,7 +3336,7 @@
 			(uuid "62b47cab-9d20-4389-b569-fa169a025eb7")
 		)
 		(instances
-			(project "gnimu-can-carrier-xiao-v1"
+			(project "gnimu-can-carrier-xiao-lipo-v1"
 				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
 					(reference "R2")
 					(unit 1)
@@ -3414,7 +3414,7 @@
 			(uuid "ff0e926a-c0bd-4ee4-a5a4-c4aedae4644a")
 		)
 		(instances
-			(project "gnimu-can-carrier-xiao-v1"
+			(project "gnimu-can-carrier-xiao-lipo-v1"
 				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
 					(reference "#PWR04")
 					(unit 1)
@@ -3492,7 +3492,7 @@
 			(uuid "9ce93487-705d-4945-be5e-4ff8bf7c4063")
 		)
 		(instances
-			(project "gnimu-can-carrier-xiao-v1"
+			(project "gnimu-can-carrier-xiao-lipo-v1"
 				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
 					(reference "#PWR015")
 					(unit 1)
@@ -3570,7 +3570,7 @@
 			(uuid "b50cffa7-6484-4dde-ba9f-8afee4bed082")
 		)
 		(instances
-			(project "gnimu-can-carrier-xiao-v1"
+			(project "gnimu-can-carrier-xiao-lipo-v1"
 				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
 					(reference "#PWR013")
 					(unit 1)
@@ -3665,7 +3665,7 @@
 			(uuid "b92a26e6-92af-4a46-ad60-9e187c1371c0")
 		)
 		(instances
-			(project "gnimu-can-carrier-xiao-v1"
+			(project "gnimu-can-carrier-xiao-lipo-v1"
 				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
 					(reference "U2")
 					(unit 1)
@@ -3696,7 +3696,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "XIAO_BATT_Leads"
+		(property "Value" "XIAO_BATT"
 			(at 143.51 78.7399 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3707,7 +3707,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal"
+		(property "Footprint" "Gnimu:Holes_1x02_P2.54mm"
 			(at 140.97 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -3747,7 +3747,7 @@
 			(uuid "558259af-63d6-4b20-9dca-61d499b0d196")
 		)
 		(instances
-			(project "gnimu-can-carrier-xiao-v1"
+			(project "gnimu-can-carrier-xiao-lipo-v1"
 				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
 					(reference "J4")
 					(unit 1)
@@ -3825,7 +3825,7 @@
 			(uuid "52c2c6bb-3bf8-4bc8-b803-34918e8cf7e4")
 		)
 		(instances
-			(project "gnimu-can-carrier-xiao-v1"
+			(project "gnimu-can-carrier-xiao-lipo-v1"
 				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
 					(reference "#PWR06")
 					(unit 1)
@@ -3907,7 +3907,7 @@
 			(uuid "56559f7a-f9ab-46f7-a204-d70ada0434c3")
 		)
 		(instances
-			(project "gnimu-can-carrier-xiao-v1"
+			(project "gnimu-can-carrier-xiao-lipo-v1"
 				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
 					(reference "R3")
 					(unit 1)
@@ -3938,7 +3938,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Switch_Conn"
+		(property "Value" "Switch"
 			(at 54.61 110.4899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3949,7 +3949,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal"
+		(property "Footprint" "Gnimu:Holes_1x02_P2.54mm"
 			(at 52.07 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -3989,7 +3989,7 @@
 			(uuid "736064dd-0f3f-4cde-9fe6-4776da35842b")
 		)
 		(instances
-			(project "gnimu-can-carrier-xiao-v1"
+			(project "gnimu-can-carrier-xiao-lipo-v1"
 				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
 					(reference "J2")
 					(unit 1)
@@ -4067,7 +4067,7 @@
 			(uuid "bca12fa4-1166-42be-8a26-488e59ab7267")
 		)
 		(instances
-			(project "gnimu-can-carrier-xiao-v1"
+			(project "gnimu-can-carrier-xiao-lipo-v1"
 				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
 					(reference "#FLG01")
 					(unit 1)
@@ -4145,7 +4145,7 @@
 			(uuid "e72485d8-1477-4b92-ae0c-2e38c8437d31")
 		)
 		(instances
-			(project "gnimu-can-carrier-xiao-v1"
+			(project "gnimu-can-carrier-xiao-lipo-v1"
 				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
 					(reference "#PWR03")
 					(unit 1)
@@ -4223,7 +4223,7 @@
 			(uuid "4cbe6f90-dce2-457e-b0c6-25eef416d62f")
 		)
 		(instances
-			(project "gnimu-can-carrier-xiao-v1"
+			(project "gnimu-can-carrier-xiao-lipo-v1"
 				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
 					(reference "#PWR09")
 					(unit 1)
@@ -4301,7 +4301,7 @@
 			(uuid "92aa37d2-0c82-431e-bd41-26fb53223f10")
 		)
 		(instances
-			(project "gnimu-can-carrier-xiao-v1"
+			(project "gnimu-can-carrier-xiao-lipo-v1"
 				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
 					(reference "#PWR010")
 					(unit 1)
@@ -4379,7 +4379,7 @@
 			(uuid "db3c094d-35e2-44d1-abb9-f25a8c98209e")
 		)
 		(instances
-			(project "gnimu-can-carrier-xiao-v1"
+			(project "gnimu-can-carrier-xiao-lipo-v1"
 				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
 					(reference "#PWR012")
 					(unit 1)
@@ -4457,7 +4457,7 @@
 			(uuid "48b69668-c777-4f97-bd78-2350e8cdcbda")
 		)
 		(instances
-			(project "gnimu-can-carrier-xiao-v1"
+			(project "gnimu-can-carrier-xiao-lipo-v1"
 				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
 					(reference "#PWR08")
 					(unit 1)
@@ -4535,7 +4535,7 @@
 			(uuid "fdf9cde9-b47a-4fab-879b-bab678ee1f79")
 		)
 		(instances
-			(project "gnimu-can-carrier-xiao-v1"
+			(project "gnimu-can-carrier-xiao-lipo-v1"
 				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
 					(reference "#PWR01")
 					(unit 1)
