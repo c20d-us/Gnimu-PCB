@@ -9,13 +9,14 @@ Boards for Gnimu-CAN, a work-in-progress telemetry reader that takes data from a
 
 | Board | Folder | Status |
 |---|---|---|
-| [**OBD-II helper v1.0**](gnimu-can-obd-helper-v1/) | `gnimu-can-obd-helper-v1/` | Ordered from OSH Park 2026-10-24. Not yet tested. |
-| **CAN carrier (XIAO), LiPo v1** | [`gnimu-can-carrier-xiao-lipo-v1/`](gnimu-can-carrier-xiao-lipo-v1/) | Layout complete and passing DRC. Not yet ordered. |
-| **CAN carrier (XIAO), 12V v1** | [`gnimu-can-carrier-xiao-12v-v1/`](gnimu-can-carrier-xiao-12v-v1/) | Layout complete and passing DRC. Not yet ordered. |
+| [**OBD-II helper v1.0**](gnimu-can-obd-helper-v1.0/) | `gnimu-can-obd-helper-v1.0/` | Ordered from OSH Park 2026-10-24. J2's +12V and GND pins are reversed relative to stock red/black leads; see its README. |
+| [**OBD-II helper v1.1**](gnimu-can-obd-helper-v1.1/) | `gnimu-can-obd-helper-v1.1/` | Layout complete. Not yet ordered. J2 swapped to pin 1 GND, pin 2 +12V; ground pour on both layers. |
+| **CAN carrier (XIAO), LiPo v1.0** | [`gnimu-can-carrier-xiao-lipo-v1.0/`](gnimu-can-carrier-xiao-lipo-v1.0/) | Layout complete and passing DRC. Not yet ordered. |
+| **CAN carrier (XIAO), 12V v1.0** | [`gnimu-can-carrier-xiao-12v-v1.0/`](gnimu-can-carrier-xiao-12v-v1.0/) | Layout complete and passing DRC. Not yet ordered. |
 
 ### OBD-II helper
 
-A small board that fits over the exposed pins on the back of a straight-pin OBD-II plug and breaks out CAN_H, CAN_L and GND to a 3-pin JST PH socket, and 12V and GND to an optional 2-pin one, with a TVS diode on the CAN lines. See [its README](gnimu-can-obd-helper-v1/).
+A small board that fits over the exposed pins on the back of a straight-pin OBD-II plug and breaks out CAN_H, CAN_L and GND to a 3-pin JST PH socket, and 12V and GND to an optional 2-pin one, with a TVS diode on the CAN lines. See [its README](gnimu-can-obd-helper-v1.0/).
 
 ### CAN carriers (XIAO)
 
@@ -66,26 +67,28 @@ The XIAO's built-in charger works through those same battery pads, so the LiPo c
 
 | Ref | Part | Role |
 |---|---|---|
-| **J2** | 2 wire pads | 12V in from the helper's J2: 1 +12V · 2 GND. |
+| **J2** | 2 wire pads | 12V in from the helper's J2. |
 | **F1** | Bourns MF-R050 | Resettable PTC fuse: 0.5A hold, 1A trip, 60V. |
 | **D1** | P6KE18A | Unidirectional TVS diode: 15.3V standoff, about 25V clamp. Cathode to the fused 12V. |
-| **J3** | 2 wire pads | Power switch: **Common** (fused 12V) and **On** (switched 12V). |
+| **D2** | 1N5819 | Series Schottky diode after D1, for reverse-polarity protection. |
+| **J3** | 2 wire pads | Power switch: **Common** (protected 12V) and **On** (switched 12V). |
 | **C1** | 47µF / 35V electrolytic (Rubycon 35YXJ47M5X11) | Input bulk capacitor, close to U3's VIN as Pololu recommends. |
 | **U3** | Pololu D24V7F5 | 5V 600mA step-down regulator, 5.1–36V in. |
-| **D2** | 1N5819 | Schottky diode from U3's output to the XIAO's 5V (VBUS) pin. |
+| **D3** | 1N5819 | Schottky diode from U3's output to the XIAO's 5V (VBUS) pin. |
 | **R2, R3** | 100kΩ + 10kΩ | Divider from the switched 12V to D0/A0 (÷11). |
 | **C2** | 100nF | Steadies the divider tap for the ADC. |
 
 The power path is:
 
 ```
-J2 +12V → F1 → D1 (to GND) → J3 switch → C1 → U3 → D2 → XIAO 5V pin
+J2 +12V → F1 → D1 (to GND) → D2 → J3 switch → C1 → U3 → D3 → XIAO 5V pin
 ```
 
-- **Reverse polarity and overvoltage.** The D24V7F5 has no reverse-voltage protection of its own. If 12V is connected backwards, D1 conducts forward. If the input rises well above about 17V, D1 breaks down. Either way the current through F1 rises until it trips, and it resets once the fault is removed.
-- **D2** keeps the XIAO's USB 5V from feeding back into the regulator when a USB cable is plugged in. Seeed recommends a diode like this whenever the 5V pin is powered externally.
+- **Reverse polarity.** The D24V7F5 has no reverse-voltage protection of its own. If 12V is connected backwards, D1 conducts forward and F1 trips, while D2 blocks the negative voltage so the regulator, C1 and the divider never see it. F1 resets once the fault is removed.
+- **Overvoltage.** If the input rises well above about 17V, D1 breaks down and clamps it, and a sustained overvoltage trips F1. D1 also clamps negative spikes before they reach D2.
+- **D3** keeps the XIAO's USB 5V from feeding back into the regulator when a USB cable is plugged in. Seeed recommends a diode like this whenever the 5V pin is powered externally.
 - **The switch** sits after the fuse and TVS, so it turns off the regulator, the XIAO and the divider together. To build without a switch (like if you get +12V from a switched source rather than the OBD-II port), bridge J3 with a wire link, or fit a 2-pin header and a jumper.
-- **The divider** gives 1.35V at 14.8V and 3.27V at 36V, so the ADC covers the regulator's whole input range. Multiply the reading at D0 by 11 to get the supply voltage.
+- **The divider** gives 1.35V at 14.8V and 3.27V at 36V, so the ADC covers the regulator's whole input range. Multiply the reading at D0 by 11, then add about 0.35V for D2's drop, to get the supply voltage.
 - **Antenna.** The XIAO's antenna is at the end opposite its USB port. A keep-out zone on both copper layers keeps tracks and the ground pour away from it.
 
 The symbols, footprints and 3D models for all the boards are in the shared [`libraries/`](../../libraries/) folder.

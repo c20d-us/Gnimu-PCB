@@ -488,7 +488,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "gnimu-carrier-xiao-v1.kicad_pro",
+    "filename": "gnimu-carrier-xiao-v1.0.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -692,8 +692,8 @@
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "gnimu-carrier-xiao-v1.kicad_sch",
-        "name": "gnimu-carrier-xiao-v1",
+        "filename": "gnimu-carrier-xiao-v1.0.kicad_sch",
+        "name": "gnimu-carrier-xiao-v1.0",
         "uuid": "65596661-31e0-4577-a6dd-3a20692ddffd"
       }
     ],
@@ -703,7 +703,7 @@
   "sheets": [
     [
       "65596661-31e0-4577-a6dd-3a20692ddffd",
-      "gnimu-carrier-xiao-v1"
+      "gnimu-carrier-xiao-v1.0"
     ]
   ],
   "text_variables": {},

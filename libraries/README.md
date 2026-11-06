@@ -39,9 +39,11 @@ The paths are relative to the project, so the library works from a fresh clone w
 | Model | Used by |
 |---|---|
 | `Pololu_D24V7Fx.step` | `Pololu_D24V7Fx_THT`, raised 2.5mm for the header-pin spacer. Pololu's own model, from the [product page](https://www.pololu.com/product/5593/resources). |
+| `Seeed_XIAO_ESP32C6.step` | `XIAO_ESP32C6_THT`, raised 2.5mm for the header-pin spacer. Seeed Studio's model of the XIAO ESP32C6 (file `Seeed Studio XIAO ESP32C6 v2.step`). |
+| `Adafruit_CAN_Pal.step` | `Adafruit_CAN_Pal_THT`, raised 2.5mm for the header-pin spacer. Adafruit's own model, from [Adafruit_CAD_Parts](https://github.com/adafruit/Adafruit_CAD_Parts/tree/main/5708%20CAN%20Pal), with the 3-pin screw terminal removed, since these carriers take CAN through the header instead. Under the MIT License; its notice is in `Adafruit_CAN_Pal.LICENSE.txt`. |
 
 The footprints find their models through `${KIPRJMOD}/../../../libraries/Gnimu.3dshapes/`, so the 3D view works for projects at the usual depth under `boards/`.
 
 The XIAO footprints cover the edge pins only. The battery pads on the underside of a XIAO are not included; carriers that need them, such as the Gnimu-CAN LiPo carrier, bring them out to a separate pair of wire pads.
 
-"Adafruit" and "CAN Pal" belong to Adafruit Industries, "Seeed" and "XIAO" to Seeed Studio, and "Pololu" to Pololu Corporation. The parts here are independent drawings for mounting those modules, and are not affiliated with or endorsed by any of them. The Pololu 3D model is Pololu's work, included as published.
+"Adafruit" and "CAN Pal" belong to Adafruit Industries, "Seeed" and "XIAO" to Seeed Studio, and "Pololu" to Pololu Corporation. The parts here are independent drawings for mounting those modules, and are not affiliated with or endorsed by any of them. The 3D models are Pololu's, Seeed Studio's and Adafruit's own work. The Pololu and Seeed models are included as downloaded; the Adafruit model is used under its MIT License, with only its screw terminal removed.

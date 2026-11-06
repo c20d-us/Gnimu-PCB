@@ -492,7 +492,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "gnimu-can-obd-helper-v1.kicad_pro",
+    "filename": "gnimu-can-obd-helper-v1.0.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -660,7 +660,7 @@
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "gnimu-can-obd-helper-v1.kicad_sch",
+        "filename": "gnimu-can-obd-helper-v1.0.kicad_sch",
         "name": "gnimu-can-obd",
         "uuid": "6b6e5c58-bf83-43da-bd11-c27e929b830c"
       }

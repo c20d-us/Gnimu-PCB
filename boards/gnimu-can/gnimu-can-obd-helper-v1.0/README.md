@@ -7,6 +7,11 @@ It is part of the Gnimu-CAN telemetry reader. The CAN socket feeds either [CAN c
 > [!NOTE]
 > **Ordered, not yet tested.** v1.0 was ordered from OSH Park on 2026-10-24. Fit and assembly notes will be added once boards arrive and have been tried on a real plug.
 
+> [!WARNING]
+> **J2's pin order doesn't match pre-made red/black JST PH leads.** On v1.0, J2 pin 1 is +12V and pin 2 is GND. The pre-crimped red/black PH leads bought for this project put black on pin 1 and red on pin 2, so plugged into v1.0 the **black wire carries +12V and the red wire is ground**. Check your own leads before plugging one in.
+>
+> To use a v1.0 board, swap the two wires in the lead's PHR-2 housing: lift each contact's latch through the housing window with a needle or extraction tool, slide the wire out, and refit it in the other position. After that, red is +12V and black is GND. [v1.1](../gnimu-can-obd-helper-v1.1/) swaps J2's pins on the board instead, so stock leads work as supplied.
+
 ---
 
 ## The board
@@ -27,7 +32,7 @@ The outline is 0.05 mm narrower than the flange. The back-side silkscreen (copyr
 | **J3** | JST PH, 3-pin (B3B-PH-K-S) | 1 CAN_H · 2 GND · 3 CAN_L | CAN bus to the Gnimu-CAN device. |
 | **J2** | JST PH, 2-pin (B2B-PH-K-S) | 1 +12V · 2 GND | Optional 12V feed. Leave it unpopulated if it isn't needed. |
 
-The silkscreen labels them `CAN_H | GND | CAN_L` and `+12V | GND`.
+The silkscreen labels them `CAN_H | GND | CAN_L` and `+12V | GND`. See the warning above about J2's pin order and lead colours.
 
 ### Pin map
 

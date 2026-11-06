@@ -198,7 +198,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/aabd0139-38bd-463c-b2fc-4d26aa33639b")
 		(sheetname "/")
-		(sheetfile "gnimu-can-carrier-xiao-lipo-v1.kicad_sch")
+		(sheetfile "gnimu-can-carrier-xiao-lipo-v1.0.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -297,6 +297,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
+			(thermal_bridge_angle 45)
 			(net "GND")
 			(pintype "passive")
 			(uuid "4655d09e-30b0-459c-a543-eaceeabb3ea7")
@@ -390,7 +391,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/59da2aec-6c82-46e8-9e8c-e87579301772")
 		(sheetname "/")
-		(sheetfile "gnimu-can-carrier-xiao-lipo-v1.kicad_sch")
+		(sheetfile "gnimu-can-carrier-xiao-lipo-v1.0.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -572,7 +573,7 @@
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/afa0062b-682c-4900-a65b-50770b4cde62")
 		(sheetname "/")
-		(sheetfile "gnimu-can-carrier-xiao-lipo-v1.kicad_sch")
+		(sheetfile "gnimu-can-carrier-xiao-lipo-v1.0.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -802,7 +803,7 @@
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/3f4205f6-9d18-4a67-9c91-c435564a2a39")
 		(sheetname "/")
-		(sheetfile "gnimu-can-carrier-xiao-lipo-v1.kicad_sch")
+		(sheetfile "gnimu-can-carrier-xiao-lipo-v1.0.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -1151,7 +1152,7 @@
 		)
 		(path "/104f7d29-dc6d-48bb-9e42-bbd7035716a8")
 		(sheetname "/")
-		(sheetfile "gnimu-can-carrier-xiao-lipo-v1.kicad_sch")
+		(sheetfile "gnimu-can-carrier-xiao-lipo-v1.0.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -1405,6 +1406,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
+			(thermal_bridge_angle 45)
 			(net "GND")
 			(pinfunction "GND_13")
 			(pintype "passive")
@@ -1422,6 +1424,17 @@
 			(uuid "e99dc2a0-162d-45d1-83e0-6659e3a988e1")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/../../../libraries/Gnimu.3dshapes/Seeed_XIAO_ESP32C6.step"
+			(offset
+				(xyz -1.75 -6.1 2.5)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 0 0)
+			)
+		)
 	)
 	(footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 		(layer "F.Cu")
@@ -1489,7 +1502,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/69fa8d0b-6ea2-4659-a964-7357a2aa3164")
 		(sheetname "/")
-		(sheetfile "gnimu-can-carrier-xiao-lipo-v1.kicad_sch")
+		(sheetfile "gnimu-can-carrier-xiao-lipo-v1.0.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -1995,7 +2008,7 @@
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/35ca4272-4b9a-4dc3-85ac-0878f3130dd2")
 		(sheetname "/")
-		(sheetfile "gnimu-can-carrier-xiao-lipo-v1.kicad_sch")
+		(sheetfile "gnimu-can-carrier-xiao-lipo-v1.0.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -2054,6 +2067,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
+			(thermal_bridge_angle 45)
 			(net "GND")
 			(pinfunction "Pin_2_2")
 			(pintype "passive")
@@ -2127,7 +2141,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/47f24865-c7be-420b-b301-43856dbb0a0b")
 		(sheetname "/")
-		(sheetfile "gnimu-can-carrier-xiao-lipo-v1.kicad_sch")
+		(sheetfile "gnimu-can-carrier-xiao-lipo-v1.0.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -2245,6 +2259,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
+			(thermal_bridge_angle 45)
 			(net "GND")
 			(pintype "passive")
 			(uuid "eb3f6943-a4db-464a-9e3c-230b6cee557f")
@@ -2318,7 +2333,7 @@
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/8b272ea6-ed57-4550-9757-69eb7e0ecce9")
 		(sheetname "/")
-		(sheetfile "gnimu-can-carrier-xiao-lipo-v1.kicad_sch")
+		(sheetfile "gnimu-can-carrier-xiao-lipo-v1.0.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -2377,6 +2392,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
+			(thermal_bridge_angle 45)
 			(net "GND")
 			(pinfunction "Pin_2_2")
 			(pintype "passive")
@@ -2439,7 +2455,7 @@
 		)
 		(path "/803e09ef-77d6-4720-8384-18664e3e51b2")
 		(sheetname "/")
-		(sheetfile "gnimu-can-carrier-xiao-lipo-v1.kicad_sch")
+		(sheetfile "gnimu-can-carrier-xiao-lipo-v1.0.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -2804,6 +2820,17 @@
 			(uuid "7c6af60a-c906-4633-8aed-3c97e6a54bfa")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/../../../libraries/Gnimu.3dshapes/Adafruit_CAN_Pal.step"
+			(offset
+				(xyz 0 -20.32 2.5)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "MountingHole:MountingHole_2.7mm_M2.5"
 		(layer "F.Cu")

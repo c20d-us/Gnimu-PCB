@@ -188,7 +188,7 @@
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/728d4c35-9058-4752-a6fc-4a8cf05396d5")
 		(sheetname "/")
-		(sheetfile "gnimu-carrier-xiao-v1.kicad_sch")
+		(sheetfile "gnimu-carrier-xiao-v1.0.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -321,7 +321,7 @@
 		(property ki_fp_filters "MountingHole*")
 		(path "/e552e668-d1b9-40f6-a5cf-69be2858c437")
 		(sheetname "/")
-		(sheetfile "gnimu-carrier-xiao-v1.kicad_sch")
+		(sheetfile "gnimu-carrier-xiao-v1.0.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -439,7 +439,7 @@
 		(property ki_fp_filters "MountingHole*")
 		(path "/ff3cacf9-1cb4-459c-8136-5d34e76bfc9e")
 		(sheetname "/")
-		(sheetfile "gnimu-carrier-xiao-v1.kicad_sch")
+		(sheetfile "gnimu-carrier-xiao-v1.0.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -544,7 +544,7 @@
 		)
 		(path "/b71aaedc-aaa1-47e3-9301-ab4f5db86504")
 		(sheetname "/")
-		(sheetfile "gnimu-carrier-xiao-v1.kicad_sch")
+		(sheetfile "gnimu-carrier-xiao-v1.0.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -826,7 +826,7 @@
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/8b4eebbe-6ffc-4b94-94b4-a2e297823ee7")
 		(sheetname "/")
-		(sheetfile "gnimu-carrier-xiao-v1.kicad_sch")
+		(sheetfile "gnimu-carrier-xiao-v1.0.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -971,7 +971,7 @@
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/b5f62a38-0787-43f8-a667-7ea637806b70")
 		(sheetname "/")
-		(sheetfile "gnimu-carrier-xiao-v1.kicad_sch")
+		(sheetfile "gnimu-carrier-xiao-v1.0.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -1115,7 +1115,7 @@
 		(property ki_fp_filters "MountingHole*")
 		(path "/23dfdf70-082d-45f5-ad01-0a8e4a78f2f9")
 		(sheetname "/")
-		(sheetfile "gnimu-carrier-xiao-v1.kicad_sch")
+		(sheetfile "gnimu-carrier-xiao-v1.0.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -1223,7 +1223,7 @@
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/bf99957a-5f91-48d1-8a39-0f0342947c80")
 		(sheetname "/")
-		(sheetfile "gnimu-carrier-xiao-v1.kicad_sch")
+		(sheetfile "gnimu-carrier-xiao-v1.0.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -1390,7 +1390,7 @@
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/021e5ff0-9576-4016-83c8-ab93c44aedbc")
 		(sheetname "/")
-		(sheetfile "gnimu-carrier-xiao-v1.kicad_sch")
+		(sheetfile "gnimu-carrier-xiao-v1.0.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -1545,7 +1545,7 @@
 		(property ki_fp_filters "MountingHole*")
 		(path "/8c5afd11-d761-44ef-9657-00176baa86b6")
 		(sheetname "/")
-		(sheetfile "gnimu-carrier-xiao-v1.kicad_sch")
+		(sheetfile "gnimu-carrier-xiao-v1.0.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -1663,7 +1663,7 @@
 		(property ki_fp_filters "MountingHole*")
 		(path "/2212979f-6350-47f2-a749-2a77920bbf5a")
 		(sheetname "/")
-		(sheetfile "gnimu-carrier-xiao-v1.kicad_sch")
+		(sheetfile "gnimu-carrier-xiao-v1.0.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -1770,7 +1770,7 @@
 		)
 		(path "/6f228288-3116-43db-8939-457eafc73218")
 		(sheetname "/")
-		(sheetfile "gnimu-carrier-xiao-v1.kicad_sch")
+		(sheetfile "gnimu-carrier-xiao-v1.0.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -2219,7 +2219,7 @@
 		(property ki_fp_filters "MountingHole*")
 		(path "/63831ede-384a-4f41-9ff0-a91fca9ceb29")
 		(sheetname "/")
-		(sheetfile "gnimu-carrier-xiao-v1.kicad_sch")
+		(sheetfile "gnimu-carrier-xiao-v1.0.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -2337,7 +2337,7 @@
 		(property ki_fp_filters "MountingHole*")
 		(path "/209a20e2-7361-4856-976b-a7fda1adaaec")
 		(sheetname "/")
-		(sheetfile "gnimu-carrier-xiao-v1.kicad_sch")
+		(sheetfile "gnimu-carrier-xiao-v1.0.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -2455,7 +2455,7 @@
 		(property ki_fp_filters "MountingHole*")
 		(path "/866adf35-a529-4722-982f-01cee5c7d9c6")
 		(sheetname "/")
-		(sheetfile "gnimu-carrier-xiao-v1.kicad_sch")
+		(sheetfile "gnimu-carrier-xiao-v1.0.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -2573,7 +2573,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/411b02d6-a2e9-4785-9d93-d266b75b76ff")
 		(sheetname "/")
-		(sheetfile "gnimu-carrier-xiao-v1.kicad_sch")
+		(sheetfile "gnimu-carrier-xiao-v1.0.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -2766,7 +2766,7 @@
 		(property ki_fp_filters "MountingHole*")
 		(path "/8a66b142-d7cc-4cdb-99e5-353aff9182e2")
 		(sheetname "/")
-		(sheetfile "gnimu-carrier-xiao-v1.kicad_sch")
+		(sheetfile "gnimu-carrier-xiao-v1.0.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -2884,7 +2884,7 @@
 		(property ki_fp_filters "MountingHole*")
 		(path "/f6f0f986-0468-4072-b5d2-162ea69f1eb3")
 		(sheetname "/")
-		(sheetfile "gnimu-carrier-xiao-v1.kicad_sch")
+		(sheetfile "gnimu-carrier-xiao-v1.0.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -3002,7 +3002,7 @@
 		(property ki_fp_filters "MountingHole*")
 		(path "/ae0133cb-fade-469e-b81c-aef711308f7e")
 		(sheetname "/")
-		(sheetfile "gnimu-carrier-xiao-v1.kicad_sch")
+		(sheetfile "gnimu-carrier-xiao-v1.0.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -3120,7 +3120,7 @@
 		(property ki_fp_filters "MountingHole*")
 		(path "/88e07c50-17a1-42b4-93d2-4b8a4e10a4b5")
 		(sheetname "/")
-		(sheetfile "gnimu-carrier-xiao-v1.kicad_sch")
+		(sheetfile "gnimu-carrier-xiao-v1.0.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -3238,7 +3238,7 @@
 		(property ki_fp_filters "MountingHole*")
 		(path "/542ea73d-f952-4b1b-a943-16f2b3aa0b18")
 		(sheetname "/")
-		(sheetfile "gnimu-carrier-xiao-v1.kicad_sch")
+		(sheetfile "gnimu-carrier-xiao-v1.0.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -3356,7 +3356,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/9f422d00-9067-4f8b-b905-d6bc2b480e72")
 		(sheetname "/")
-		(sheetfile "gnimu-carrier-xiao-v1.kicad_sch")
+		(sheetfile "gnimu-carrier-xiao-v1.0.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -3549,7 +3549,7 @@
 		(property ki_fp_filters "MountingHole*")
 		(path "/2e7c226d-4bba-4f88-8f66-dee954d27781")
 		(sheetname "/")
-		(sheetfile "gnimu-carrier-xiao-v1.kicad_sch")
+		(sheetfile "gnimu-carrier-xiao-v1.0.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -3657,7 +3657,7 @@
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/901ef8c8-fbe4-4e41-8cec-617794735986")
 		(sheetname "/")
-		(sheetfile "gnimu-carrier-xiao-v1.kicad_sch")
+		(sheetfile "gnimu-carrier-xiao-v1.0.kicad_sch")
 		(units
 			(unit
 				(name "A")

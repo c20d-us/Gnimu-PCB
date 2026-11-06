@@ -507,7 +507,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "gnimu-can-carrier-xiao-12v-v1.kicad_pro",
+    "filename": "gnimu-can-carrier-xiao-lipo-v1.0.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -569,28 +569,20 @@
     "netclass_assignments": {},
     "netclass_patterns": [
       {
-        "netclass": "CAN",
-        "pattern": "CAN_[H|L|R|T].*"
+        "netclass": "Power",
+        "pattern": "V.*"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "+3V3"
       },
       {
         "netclass": "Power",
         "pattern": "GND"
       },
       {
-        "netclass": "Power",
-        "pattern": "+3V*"
-      },
-      {
-        "netclass": "Power",
-        "pattern": "+5V*"
-      },
-      {
-        "netclass": "Power",
-        "pattern": "+12V*"
-      },
-      {
-        "netclass": "Power",
-        "pattern": "VB*"
+        "netclass": "CAN",
+        "pattern": "CAN_[H|L|R|T].*"
       }
     ]
   },
@@ -730,12 +722,12 @@
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "gnimu-can-carrier-xiao-12v-v1.kicad_sch",
+        "filename": "gnimu-can-carrier-xiao-lipo-v1.0.kicad_sch",
         "name": "Root",
         "uuid": "b4719a39-f83c-4637-b02f-49d0f0ba5756"
       }
     ],
-    "used_designators": "#FLG1-5,#PWR1-28,C1-2,D1-2,F1,J1-4,R1-3,U1-3",
+    "used_designators": "#FLG1-3,#PWR1-15,C1,J1-4,R1-3,U1-3",
     "variants": []
   },
   "sheets": [

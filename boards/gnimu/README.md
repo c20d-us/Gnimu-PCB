@@ -13,9 +13,9 @@ For the parts list, assembly steps, and usage, follow the [XIAO nRF52840 build g
 | Revision | Date | Folder | Fabrication outputs |
 |---|---|---|---|
 | **v1.1** | 2026-10-10 | [`gnimu-carrier-xiao-v1.1/`](gnimu-carrier-xiao-v1.1/) | Not yet added |
-| **v1** | 2026-09-27 | [`gnimu-carrier-xiao-v1/`](gnimu-carrier-xiao-v1/) | [`fabrication/`](gnimu-carrier-xiao-v1/fabrication/), gerbers as ordered from JLCPCB |
+| **v1.0** | 2026-09-27 | [`gnimu-carrier-xiao-v1.0/`](gnimu-carrier-xiao-v1.0/) | [`fabrication/`](gnimu-carrier-xiao-v1.0/fabrication/), gerbers as ordered from JLCPCB |
 
-**v1.1** differs from v1 only in its larger mounting holes (2.7mm for M2.5, up from 2.2mm for M2) and a printed reminder of the regulator's settings, `PS open · 3V3`. The two are wired identically.
+**v1.1** differs from v1.0 only in its larger mounting holes (2.7mm for M2.5, up from 2.2mm for M2) and a printed reminder of the regulator's settings, `PS open · 3V3`. The two are wired identically.
 
 ---
 

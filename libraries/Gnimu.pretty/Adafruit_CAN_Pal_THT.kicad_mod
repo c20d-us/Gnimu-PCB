@@ -273,4 +273,9 @@
 		(uuid "25a4483e-1e6d-4a21-8be7-5f8452a46f33")
 	)
 	(embedded_fonts no)
+	(model "${KIPRJMOD}/../../../libraries/Gnimu.3dshapes/Adafruit_CAN_Pal.step"
+		(offset (xyz 0 -20.32 2.5))
+		(scale (xyz 1 1 1))
+		(rotate (xyz 0 0 0))
+	)
 )

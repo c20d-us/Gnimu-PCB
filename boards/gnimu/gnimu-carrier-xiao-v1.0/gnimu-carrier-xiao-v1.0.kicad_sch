@@ -2,12 +2,14 @@
 	(version 20260306)
 	(generator "eeschema")
 	(generator_version "10.0")
-	(uuid "b4719a39-f83c-4637-b02f-49d0f0ba5756")
+	(uuid "65596661-31e0-4577-a6dd-3a20692ddffd")
 	(paper "A5")
 	(title_block
-		(title "Gnimu-CAN Carrier XIAO")
-		(date "2026-10-24")
+		(title "Gnimu GNSS+IMU carrier board (XIAO)")
+		(date "2026-09-27")
 		(rev "v1.0")
+		(comment 1 "Accurate placement of components is reserved for the PCB editor.")
+		(comment 2 "Components are laid out for visibility and completeness, not accurate placement.")
 	)
 	(lib_symbols
 		(symbol "Connector_Generic:Conn_01x02"
@@ -355,42 +357,38 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:C"
-			(pin_numbers
-				(hide yes)
-			)
+		(symbol "Connector_Generic:Conn_01x04"
 			(pin_names
-				(offset 0.254)
+				(offset 1.016)
+				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "C"
-				(at 0.635 2.54 0)
+			(property "Reference" "J"
+				(at 0 5.08 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
-			(property "Value" "C"
-				(at 0.635 -2.54 0)
+			(property "Value" "Conn_01x04"
+				(at 0 -7.62 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
 			(property "Footprint" ""
-				(at 0.9652 -3.81 0)
+				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -411,7 +409,7 @@
 					)
 				)
 			)
-			(property "Description" "Unpolarized capacitor"
+			(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -422,7 +420,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "cap capacitor"
+			(property "ki_keywords" "connector"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -433,7 +431,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "C_*"
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -444,37 +442,66 @@
 					)
 				)
 			)
-			(symbol "C_0_1"
-				(polyline
-					(pts
-						(xy -2.032 0.762) (xy 2.032 0.762)
-					)
+			(symbol "Conn_01x04_1_1"
+				(rectangle
+					(start -1.27 3.81)
+					(end 1.27 -6.35)
 					(stroke
-						(width 0.508)
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -1.27 2.667)
+					(end 0 2.413)
+					(stroke
+						(width 0.1524)
 						(type default)
 					)
 					(fill
 						(type none)
 					)
 				)
-				(polyline
-					(pts
-						(xy -2.032 -0.762) (xy 2.032 -0.762)
-					)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
 					(stroke
-						(width 0.508)
+						(width 0.1524)
 						(type default)
 					)
 					(fill
 						(type none)
 					)
 				)
-			)
-			(symbol "C_1_1"
+				(rectangle
+					(start -1.27 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -4.953)
+					(end 0 -5.207)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(pin passive line
-					(at 0 3.81 270)
-					(length 2.794)
-					(name ""
+					(at -5.08 2.54 0)
+					(length 3.81)
+					(name "Pin_1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -490,9 +517,9 @@
 					)
 				)
 				(pin passive line
-					(at 0 -3.81 90)
-					(length 2.794)
-					(name ""
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -500,6 +527,316 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -5.08 0)
+					(length 3.81)
+					(name "Pin_4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Connector_Generic:Conn_01x06"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0 7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x06"
+				(at 0 -10.16 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Conn_01x06_1_1"
+				(rectangle
+					(start -1.27 6.35)
+					(end 1.27 -8.89)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -1.27 5.207)
+					(end 0 4.953)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 2.667)
+					(end 0 2.413)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -4.953)
+					(end 0 -5.207)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -7.493)
+					(end 0 -7.747)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 5.08 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 2.54 0)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -5.08 0)
+					(length 3.81)
+					(name "Pin_5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -7.62 0)
+					(length 3.81)
+					(name "Pin_6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -650,209 +987,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Gnimu:Adafruit_CAN_Pal"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "U"
-				(at 0 10.16 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "CAN Pal"
-				(at 0 8.382 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "Gnimu:Adafruit_CAN_Pal_THT"
-				(at 0 -13.97 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Adafruit CAN Pal CAN transceiver breakout. TX/RX to the MCU's CAN controller; S = silent/standby control."
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "Adafruit_CAN_Pal_0_1"
-				(rectangle
-					(start -7.62 7.62)
-					(end 7.62 -7.62)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(symbol "Adafruit_CAN_Pal_1_1"
-				(pin bidirectional line
-					(at 10.16 -1.27 180)
-					(length 2.54)
-					(name "CANL"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 10.16 1.27 180)
-					(length 2.54)
-					(name "CANH"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -10.16 -3.81 0)
-					(length 2.54)
-					(name "S"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -10.16 1.27 0)
-					(length 2.54)
-					(name "TX"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at -10.16 -1.27 0)
-					(length 2.54)
-					(name "RX"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -10.16 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -10.16 5.08 0)
-					(length 2.54)
-					(name "VCC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Gnimu:XIAO_ESP32C6"
+		(symbol "Gnimu:XIAO_nRF52840_Sense"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -868,7 +1003,7 @@
 					)
 				)
 			)
-			(property "Value" "XIAO ESP32C6"
+			(property "Value" "XIAO nRF52840 Sense"
 				(at 0 -11.43 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -878,7 +1013,7 @@
 					)
 				)
 			)
-			(property "Footprint" "Gnimu:XIAO_ESP32C6_THT"
+			(property "Footprint" "Gnimu:XIAO_nRF52840_THT"
 				(at 0 -13.97 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -889,7 +1024,7 @@
 					)
 				)
 			)
-			(property "Datasheet" "https://wiki.seeedstudio.com/xiao_esp32c6_getting_started/"
+			(property "Datasheet" "https://wiki.seeedstudio.com/XIAO_BLE/"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -900,7 +1035,7 @@
 					)
 				)
 			)
-			(property "Description" "Seeed XIAO ESP32C6, 14 edge pins only (through-hole). Pin names include ESP32-C6 GPIO numbers."
+			(property "Description" "Seeed XIAO nRF52840 Sense, 14 edge pins only (through-hole)"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -911,10 +1046,10 @@
 					)
 				)
 			)
-			(symbol "XIAO_ESP32C6_0_1"
+			(symbol "XIAO_nRF52840_Sense_0_1"
 				(rectangle
-					(start -15.24 10.16)
-					(end 20.32 -10.16)
+					(start -12.7 10.16)
+					(end 12.7 -10.16)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -924,11 +1059,11 @@
 					)
 				)
 			)
-			(symbol "XIAO_ESP32C6_1_1"
+			(symbol "XIAO_nRF52840_Sense_1_1"
 				(pin bidirectional line
-					(at -17.78 7.62 0)
+					(at -15.24 7.62 0)
 					(length 2.54)
-					(name "D0/A0/GPIO0"
+					(name "D0/A0"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -944,9 +1079,9 @@
 					)
 				)
 				(pin bidirectional line
-					(at -17.78 5.08 0)
+					(at -15.24 5.08 0)
 					(length 2.54)
-					(name "D1/A1/GPIO1"
+					(name "D1/A1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -962,9 +1097,9 @@
 					)
 				)
 				(pin bidirectional line
-					(at -17.78 2.54 0)
+					(at -15.24 2.54 0)
 					(length 2.54)
-					(name "D2/A2/GPIO2"
+					(name "D2/A2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -980,9 +1115,9 @@
 					)
 				)
 				(pin bidirectional line
-					(at -17.78 0 0)
+					(at -15.24 0 0)
 					(length 2.54)
-					(name "D3/GPIO21"
+					(name "D3/A3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -998,9 +1133,9 @@
 					)
 				)
 				(pin bidirectional line
-					(at -17.78 -2.54 0)
+					(at -15.24 -2.54 0)
 					(length 2.54)
-					(name "D4/SDA/GPIO22"
+					(name "D4/A4/SDA"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1016,9 +1151,9 @@
 					)
 				)
 				(pin bidirectional line
-					(at -17.78 -5.08 0)
+					(at -15.24 -5.08 0)
 					(length 2.54)
-					(name "D5/SCL/GPIO23"
+					(name "D5/A5/SCL"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1034,9 +1169,9 @@
 					)
 				)
 				(pin bidirectional line
-					(at -17.78 -7.62 0)
+					(at -15.24 -7.62 0)
 					(length 2.54)
-					(name "D6/TX/GPIO16"
+					(name "D6/TX"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1052,9 +1187,9 @@
 					)
 				)
 				(pin bidirectional line
-					(at 22.86 -7.62 180)
+					(at 15.24 -7.62 180)
 					(length 2.54)
-					(name "D7/RX/GPIO17"
+					(name "D7/RX"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1070,9 +1205,9 @@
 					)
 				)
 				(pin bidirectional line
-					(at 22.86 -5.08 180)
+					(at 15.24 -5.08 180)
 					(length 2.54)
-					(name "D8/SCK/GPIO19"
+					(name "D8"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1088,9 +1223,9 @@
 					)
 				)
 				(pin bidirectional line
-					(at 22.86 -2.54 180)
+					(at 15.24 -2.54 180)
 					(length 2.54)
-					(name "D9/MISO/GPIO20"
+					(name "D9"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1106,9 +1241,9 @@
 					)
 				)
 				(pin bidirectional line
-					(at 22.86 0 180)
+					(at 15.24 0 180)
 					(length 2.54)
-					(name "D10/MOSI/GPIO18"
+					(name "D10"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1124,7 +1259,7 @@
 					)
 				)
 				(pin power_out line
-					(at 22.86 2.54 180)
+					(at 15.24 2.54 180)
 					(length 2.54)
 					(name "3V3"
 						(effects
@@ -1142,7 +1277,7 @@
 					)
 				)
 				(pin passive line
-					(at 22.86 5.08 180)
+					(at 15.24 5.08 180)
 					(length 2.54)
 					(name "GND"
 						(effects
@@ -1160,7 +1295,7 @@
 					)
 				)
 				(pin passive line
-					(at 22.86 7.62 180)
+					(at 15.24 7.62 180)
 					(length 2.54)
 					(name "VBUS"
 						(effects
@@ -1180,33 +1315,14 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:+3V3"
-			(power global)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
+		(symbol "Gnimu:XL63070_Module"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "+3V3"
-				(at 0 3.556 0)
+			(property "Reference" "U"
+				(at 0 7.62 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -1215,8 +1331,18 @@
 					)
 				)
 			)
-			(property "Footprint" ""
-				(at 0 0 0)
+			(property "Value" "XL63070"
+				(at 0 5.842 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Gnimu:XL63070_THT"
+				(at 0 -12.7 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -1237,7 +1363,7 @@
 					)
 				)
 			)
-			(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(property "Description" "XL63070 buck-boost module (TPS63070). EN high = on (on-module pull-up)."
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1248,60 +1374,24 @@
 					)
 				)
 			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
+			(symbol "XL63070_Module_0_1"
+				(rectangle
+					(start -7.62 5.08)
+					(end 7.62 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
 					)
 				)
 			)
-			(symbol "+3V3_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "+3V3_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name ""
+			(symbol "XL63070_Module_1_1"
+				(pin passive line
+					(at -10.16 2.54 0)
+					(length 2.54)
+					(name "VIN"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1316,138 +1406,17 @@
 						)
 					)
 				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "power:+BATT"
-			(power global)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "+BATT"
-				(at 0 3.556 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"+BATT\""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "global power battery"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "+BATT_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "+BATT_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name ""
+				(pin passive line
+					(at -1.27 -7.62 90)
+					(length 2.54)
+					(name "GND"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "1"
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1455,114 +1424,17 @@
 						)
 					)
 				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "power:GND"
-			(power global)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "#PWR"
-				(at 0 -6.35 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "GND"
-				(at 0 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "GND_0_1"
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "GND_1_1"
-				(pin power_in line
-					(at 0 0 270)
-					(length 0)
-					(name ""
+				(pin passive line
+					(at 1.27 -7.62 90)
+					(length 2.54)
+					(name "GND"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "1"
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1570,100 +1442,35 @@
 						)
 					)
 				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "power:PWR_FLAG"
-			(power global)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "#FLG"
-				(at 0 1.905 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "PWR_FLAG"
-				(at 0 3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Special symbol for telling ERC where power comes from"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "flag power"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "PWR_FLAG_0_0"
 				(pin power_out line
-					(at 0 0 90)
-					(length 0)
-					(name ""
+					(at 10.16 2.54 180)
+					(length 2.54)
+					(name "VOUT"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "1"
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 -2.54 0)
+					(length 2.54)
+					(name "EN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1672,13 +1479,98 @@
 					)
 				)
 			)
-			(symbol "PWR_FLAG_0_1"
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+			(embedded_fonts no)
+		)
+		(symbol "Mechanical:MountingHole"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "H"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
 					)
+				)
+			)
+			(property "Value" "MountingHole"
+				(at 0 3.175 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Mounting Hole without connection"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "MountingHole_0_1"
+				(circle
+					(center 0 0)
+					(radius 1.27)
 					(stroke
-						(width 0)
+						(width 1.27)
 						(type default)
 					)
 					(fill
@@ -1689,229 +1581,157 @@
 			(embedded_fonts no)
 		)
 	)
-	(junction
-		(at 134.62 76.2)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8b066300-cc6a-4337-bbbb-17eba0d25e6c")
-	)
-	(junction
-		(at 92.71 76.2)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9235e9ba-5c3e-47db-91da-01c52821dc87")
-	)
-	(junction
-		(at 33.02 76.2)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "abd263d8-1572-4032-816f-646ff41d4156")
-	)
 	(no_connect
-		(at 30.48 34.29)
-		(uuid "35ab37f3-2dcd-42b0-baba-ac8f2009ba83")
+		(at 59.69 25.4)
+		(uuid "b1943b13-f33d-41c3-a03a-ce5ea287bb73")
 	)
-	(no_connect
-		(at 30.48 39.37)
-		(uuid "484fb6b5-dd56-496c-bec5-9d3f57bd8965")
+	(global_label "GNSS_EN"
+		(shape input)
+		(at 97.79 35.56 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "069287a9-86ec-478c-abba-45aff4f4363f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 86.3382 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
 	)
-	(no_connect
-		(at 30.48 44.45)
-		(uuid "7e18637e-f28a-431e-a50a-0ebb9b3ae472")
+	(global_label "I2C_SDA"
+		(shape input)
+		(at 40.64 86.36 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "0c448421-45ff-439b-a610-a085a78c04f6")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 30.0348 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
 	)
-	(no_connect
-		(at 30.48 46.99)
-		(uuid "b69555e4-9b8e-495e-8d2e-f0687a2fcb16")
+	(global_label "GND"
+		(shape input)
+		(at 102.87 64.77 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "38c79d2d-1864-423c-a27b-372675e43aec")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 96.0143 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
 	)
-	(no_connect
-		(at 30.48 36.83)
-		(uuid "ba02ab70-0138-4d61-8b52-01e4b6d9e065")
+	(global_label "D8"
+		(shape input)
+		(at 68.58 85.09 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "3c79ec3e-8e54-499e-9a6f-7a43fa4771be")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 63.1153 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
 	)
-	(no_connect
-		(at 71.12 31.75)
-		(uuid "dd95fae8-d63d-4bbb-a3af-95db15e24fa4")
+	(global_label "VSYS"
+		(shape input)
+		(at 102.87 85.09 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "3db665c0-2691-4791-9df4-1ea2e245357f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 95.2886 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
 	)
-	(no_connect
-		(at 30.48 41.91)
-		(uuid "f40f02ee-b81b-4630-affd-3b937091c435")
+	(global_label "I2C_SCL"
+		(shape input)
+		(at 29.21 38.1 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "424f9b64-6311-4a5f-84c2-bf9d660f7e5e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 18.6653 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
 	)
-	(no_connect
-		(at 71.12 46.99)
-		(uuid "f67bf9e8-56ec-43b7-ade6-751bb21dc2bf")
-	)
-	(wire
-		(pts
-			(xy 92.71 76.2) (xy 95.25 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2d5a7dcd-976c-4ca3-a0f7-aa9ffd5c7666")
-	)
-	(wire
-		(pts
-			(xy 88.9 36.83) (xy 71.12 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4ea464ed-5f97-4b17-b7ef-22d231e74e1b")
-	)
-	(wire
-		(pts
-			(xy 127 49.53) (xy 127 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5db4b777-95a1-4b73-9163-417b250fd719")
-	)
-	(wire
-		(pts
-			(xy 41.91 107.95) (xy 46.99 107.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "70dc3061-6b77-468b-a944-30c6ee627693")
-	)
-	(wire
-		(pts
-			(xy 128.27 76.2) (xy 134.62 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7bd4a4a7-be2b-42f1-b36d-fd2ee3ab3a5e")
-	)
-	(wire
-		(pts
-			(xy 134.62 76.2) (xy 135.89 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7ddfbbf8-8471-4b73-bef7-06489f4e84a7")
-	)
-	(wire
-		(pts
-			(xy 134.62 71.12) (xy 134.62 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "92839918-1f88-437e-af0d-f9d6d32c30e0")
-	)
-	(wire
-		(pts
-			(xy 33.02 71.12) (xy 33.02 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9ef6441f-bd21-46fd-9fa9-5a13577ed816")
-	)
-	(wire
-		(pts
-			(xy 33.02 76.2) (xy 46.99 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a5f63530-7e85-42ac-8355-0ab971243e44")
-	)
-	(wire
-		(pts
-			(xy 83.82 76.2) (xy 92.71 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b200c186-395b-452a-bca6-d33517c75452")
-	)
-	(wire
-		(pts
-			(xy 93.98 34.29) (xy 71.12 34.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b5bff861-141f-423a-bbaf-0f972c11b90f")
-	)
-	(wire
-		(pts
-			(xy 83.82 78.74) (xy 95.25 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c2bac9a6-e7c6-41da-82d4-d6eaefe19fb2")
-	)
-	(wire
-		(pts
-			(xy 110.49 33.02) (xy 116.84 33.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c3e78bbe-cf6e-4b63-808c-139d0b305453")
-	)
-	(wire
-		(pts
-			(xy 128.27 78.74) (xy 135.89 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c635fb37-7014-48ab-abfc-985c820f780e")
-	)
-	(wire
-		(pts
-			(xy 41.91 110.49) (xy 46.99 110.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d22c1867-809e-4ff2-92cf-255cf6920d5c")
-	)
-	(wire
-		(pts
-			(xy 29.21 76.2) (xy 33.02 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d8a9d645-b5aa-40d8-9264-4b011e953ac3")
-	)
-	(wire
-		(pts
-			(xy 92.71 71.12) (xy 92.71 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fcac15b7-1e04-4349-b113-5317fd66c5b3")
-	)
-	(global_label "CAN_TX"
-		(shape output)
-		(at 71.12 41.91 0)
+	(global_label "GND"
+		(shape input)
+		(at 152.4 52.07 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1919,9 +1739,9 @@
 			)
 			(justify left)
 		)
-		(uuid "1eea68fa-bd47-47a8-97d6-47895246ebdb")
+		(uuid "42e9e053-63d4-4008-982f-05edc5265807")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 80.939 41.91 0)
+			(at 152.4 45.2143 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1933,9 +1753,201 @@
 			)
 		)
 	)
-	(global_label "CAN_SILENT"
-		(shape output)
-		(at 71.12 44.45 0)
+	(global_label "SW_SENSE"
+		(shape input)
+		(at 152.4 59.69 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "430e4831-fd10-4592-b4cb-79b98299f4c8")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 152.4 72.3512 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "D3"
+		(shape input)
+		(at 29.21 33.02 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "471640fe-7850-4919-978a-1254964a3a5e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 23.7453 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "SW_OFF"
+		(shape input)
+		(at 68.58 66.04 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "50d6c6f0-280c-41d5-9e67-f20ba7231ef8")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 58.4586 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "D10"
+		(shape input)
+		(at 68.58 80.01 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "51e1a4ca-5014-4a26-bf37-a85b86b251b2")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 61.9058 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "VSYS"
+		(shape input)
+		(at 68.58 60.96 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "5fd6b63f-5132-4ce5-94c1-26d5b0a9b476")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 60.9986 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "3V3"
+		(shape input)
+		(at 40.64 83.82 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "654c2fc0-09b1-49be-b6d5-aa59f829bb1a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 34.1472 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape input)
+		(at 102.87 87.63 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "6c4f39ba-a43f-4117-a289-4848f5d30113")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 96.0143 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "UART_TX"
+		(shape input)
+		(at 29.21 40.64 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "71b55868-36d8-453b-b797-c88bb9cb8cb1")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 18.4234 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "D8"
+		(shape input)
+		(at 59.69 38.1 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1943,9 +1955,9 @@
 			)
 			(justify left)
 		)
-		(uuid "519a5634-c5bc-4aa9-a8af-ed90a37b550c")
+		(uuid "72f4d7de-3e68-473f-978f-ca9db19adaaa")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 85.0514 44.45 0)
+			(at 65.1547 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1957,57 +1969,9 @@
 			)
 		)
 	)
-	(global_label "CAN_RX"
-		(shape output)
-		(at 116.84 39.37 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "6ad09937-d78d-4dce-af2c-d65bae3043f4")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 106.7186 39.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
-	(global_label "VBAT_SENSE"
-		(shape output)
-		(at 170.18 40.64 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "6d381f61-75ab-4a16-ace1-0f7d27bb43d2")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 170.18 55.0551 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
-	(global_label "CAN_TX"
+	(global_label "GND"
 		(shape input)
-		(at 116.84 36.83 180)
+		(at 68.58 77.47 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2015,9 +1979,9 @@
 			)
 			(justify right)
 		)
-		(uuid "7867020b-4d15-4ed5-9555-223c99267ac2")
+		(uuid "78102677-39e0-4945-a3ce-5d3168c70307")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 107.021 36.83 0)
+			(at 61.7243 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2029,9 +1993,105 @@
 			)
 		)
 	)
-	(global_label "CAN_RX"
+	(global_label "GNSS_PWR"
 		(shape input)
-		(at 71.12 39.37 0)
+		(at 40.64 63.5 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "799a8faa-eea7-4a7a-9820-db1934650570")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 27.6763 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape input)
+		(at 40.64 81.28 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "7a36e0a5-9001-4d4a-aea0-4cb0a8e4453f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 33.7843 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "UART_TX"
+		(shape input)
+		(at 40.64 68.58 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "8e108ccf-d210-44df-8266-f3928b9c430d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 29.8534 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "D3"
+		(shape input)
+		(at 68.58 90.17 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "9143af40-3326-4da1-b706-f443dd0817e9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 63.1153 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "GNSS_PWR"
+		(shape input)
+		(at 118.11 30.48 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2039,9 +2099,9 @@
 			)
 			(justify left)
 		)
-		(uuid "96b2fc04-71de-44d7-8fea-693024e287c4")
+		(uuid "95117173-db4e-4018-b572-876791b62927")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 81.2414 39.37 0)
+			(at 131.0737 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2053,9 +2113,57 @@
 			)
 		)
 	)
-	(global_label "CAN_L"
-		(shape bidirectional)
-		(at 137.16 39.37 0)
+	(global_label "VBAT_RAW"
+		(shape input)
+		(at 68.58 63.5 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "9b15453a-c60c-4d45-932b-428b1c326eb8")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 56.4024 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "GNSS_EN"
+		(shape input)
+		(at 29.21 27.94 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "9e907e19-42ec-4c90-82c7-2a31701ce168")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 17.7582 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape input)
+		(at 59.69 27.94 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2063,9 +2171,9 @@
 			)
 			(justify left)
 		)
-		(uuid "ac32a4c7-7c8d-488a-b31b-14a2cfcb6491")
+		(uuid "a4a153f7-1373-4fe1-8e1d-14dd4f166d43")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 146.9413 39.37 0)
+			(at 66.5457 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2077,9 +2185,9 @@
 			)
 		)
 	)
-	(global_label "CAN_SILENT"
+	(global_label "I2C_SDA"
 		(shape input)
-		(at 156.21 40.64 270)
+		(at 29.21 35.56 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2087,9 +2195,9 @@
 			)
 			(justify right)
 		)
-		(uuid "c4880ff3-e4b9-4490-bf35-a645ea3dd7fb")
+		(uuid "a4dee37b-35cf-4dbe-bc59-12d2b391f78c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 156.21 54.5714 90)
+			(at 18.6048 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2101,9 +2209,9 @@
 			)
 		)
 	)
-	(global_label "VBAT_SENSE"
-		(shape output)
-		(at 184.15 40.64 270)
+	(global_label "SW_SENSE"
+		(shape input)
+		(at 177.8 59.69 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2111,9 +2219,9 @@
 			)
 			(justify right)
 		)
-		(uuid "cc8cff79-e269-4008-99da-6e9a413cce64")
+		(uuid "a6dd9421-a2e7-4022-8ebe-9dd859213af5")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 184.15 55.0551 90)
+			(at 177.8 72.3512 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2125,9 +2233,9 @@
 			)
 		)
 	)
-	(global_label "CAN_H"
-		(shape bidirectional)
-		(at 46.99 73.66 180)
+	(global_label "GND"
+		(shape input)
+		(at 106.68 40.64 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2135,9 +2243,9 @@
 			)
 			(justify right)
 		)
-		(uuid "cca44d78-e102-4602-9cec-82e0fa7d1866")
+		(uuid "a8ea147a-47f7-4fd6-a677-67301177f0f7")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 36.9063 73.66 0)
+			(at 106.68 47.4957 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2149,9 +2257,9 @@
 			)
 		)
 	)
-	(global_label "CAN_L"
-		(shape bidirectional)
-		(at 46.99 78.74 180)
+	(global_label "GND"
+		(shape input)
+		(at 109.22 40.64 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2159,9 +2267,9 @@
 			)
 			(justify right)
 		)
-		(uuid "dea5494d-a24f-465c-bb84-faf6367b0a57")
+		(uuid "abd49841-b232-419b-b2d0-01fa760d0687")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 37.2087 78.74 0)
+			(at 109.22 47.4957 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2173,9 +2281,9 @@
 			)
 		)
 	)
-	(global_label "CAN_H"
-		(shape bidirectional)
-		(at 137.16 36.83 0)
+	(global_label "D10"
+		(shape input)
+		(at 59.69 33.02 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2183,9 +2291,9 @@
 			)
 			(justify left)
 		)
-		(uuid "e6846f77-d9ba-4305-9e48-17e01f9d60ee")
+		(uuid "b3bf01e2-26e8-4bf7-bfe3-dfe0c2bc1e14")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 147.2437 36.83 0)
+			(at 66.3642 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2197,9 +2305,9 @@
 			)
 		)
 	)
-	(global_label "VBAT_SENSE"
+	(global_label "D2"
 		(shape input)
-		(at 30.48 31.75 180)
+		(at 29.21 30.48 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2207,9 +2315,9 @@
 			)
 			(justify right)
 		)
-		(uuid "f5aa4346-47cd-4614-8732-b292b91b201f")
+		(uuid "baa31a84-7812-4aee-8006-15eb5d7032b2")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 16.0649 31.75 0)
+			(at 23.7453 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2221,9 +2329,9 @@
 			)
 		)
 	)
-	(global_label "CAN_SILENT"
+	(global_label "D2"
 		(shape input)
-		(at 116.84 41.91 180)
+		(at 68.58 87.63 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2231,9 +2339,9 @@
 			)
 			(justify right)
 		)
-		(uuid "fd32a2e0-c00a-4173-8d6c-fac76ae413c9")
+		(uuid "bc0ce163-b4d1-4702-8ce9-d77fef3e7e63")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 102.9086 41.91 0)
+			(at 63.1153 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2245,9 +2353,33 @@
 			)
 		)
 	)
-	(global_label "VBAT_SENSE"
+	(global_label "D9"
 		(shape input)
-		(at 176.53 76.2 90)
+		(at 68.58 82.55 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "bf24610f-5ea8-41af-a242-0e1cb6e3d5d1")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 63.1153 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "UART_RX"
+		(shape input)
+		(at 59.69 40.64 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2255,9 +2387,225 @@
 			)
 			(justify left)
 		)
-		(uuid "ff1211ed-1f77-428a-9298-ce1e21d82131")
+		(uuid "c80396a9-3e04-49d7-911b-0736cf8553fc")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 176.53 61.7849 90)
+			(at 70.779 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "3V3"
+		(shape input)
+		(at 59.69 30.48 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "cc6ed88d-0567-4de2-956c-2a9ec39b9f34")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 66.1828 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "VSYS"
+		(shape input)
+		(at 97.79 30.48 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "d0c1c9bd-a45d-4682-ab04-704c97b7ca51")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 90.2086 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "UART_RX"
+		(shape input)
+		(at 40.64 66.04 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "d19330fb-a148-418c-be3d-d18283084ebe")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 29.551 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "SW_SENSE"
+		(shape input)
+		(at 29.21 25.4 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "d861a887-1e15-4b8b-a6e8-8776854d1903")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 16.5488 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "SW_OFF"
+		(shape input)
+		(at 177.8 52.07 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ded76c1c-e3de-433a-9388-4bb88553d657")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 177.8 41.9486 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape input)
+		(at 40.64 60.96 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e5638bb5-1945-4775-80b0-2ae267b70ab4")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 33.7843 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "VBAT_RAW"
+		(shape input)
+		(at 102.87 62.23 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "eb51f4bd-7bd9-49ba-92ac-e1799d9071f3")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 90.6924 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "I2C_SCL"
+		(shape input)
+		(at 40.64 88.9 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ec16ddaf-135c-4e02-a84f-72f2f12c8a5d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 30.0953 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "D9"
+		(shape input)
+		(at 59.69 35.56 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ff4ce318-90cd-44ab-99df-47b9e7933d5f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 65.1547 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2270,8 +2618,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 128.27 78.74 0)
+		(lib_id "Connector_Generic:Conn_01x04")
+		(at 45.72 63.5 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2280,30 +2628,31 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "0fec5d02-9252-4d41-9f80-acf41e5e3a82")
-		(property "Reference" "#PWR011"
-			(at 128.27 85.09 0)
-			(hide yes)
+		(uuid "021e5ff0-9576-4016-83c8-ab93c44aedbc")
+		(property "Reference" "J1"
+			(at 48.26 63.4999 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "GND"
-			(at 128.27 83.82 0)
+		(property "Value" "GNSS"
+			(at 48.26 66.0399 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 128.27 78.74 0)
+		(property "Footprint" "Gnimu:Holes_1x04_P2.54mm"
+			(at 45.72 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2314,7 +2663,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 128.27 78.74 0)
+			(at 45.72 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2324,8 +2673,8 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 128.27 78.74 0)
+		(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 45.72 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2336,20 +2685,333 @@
 			)
 		)
 		(pin "1"
-			(uuid "39936998-28ea-4451-bc14-9043003b26d4")
+			(uuid "01816b7f-aca1-4d72-b554-3f1c498197e2")
+		)
+		(pin "4"
+			(uuid "474e160b-a527-4d6d-9b99-42a6a8ff7b98")
+		)
+		(pin "2"
+			(uuid "ccebf0b9-880e-4ef8-b279-99a888abd996")
+		)
+		(pin "3"
+			(uuid "56180546-b54a-4e5d-8a72-a9fd4128bc5e")
 		)
 		(instances
-			(project "gnimu-can-carrier-xiao-lipo-v1"
-				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
-					(reference "#PWR011")
+			(project "gnimu-carrier-xiao-v1.0"
+				(path "/65596661-31e0-4577-a6dd-3a20692ddffd"
+					(reference "J1")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Gnimu:XIAO_ESP32C6")
-		(at 48.26 39.37 0)
+		(lib_id "Mechanical:MountingHole")
+		(at 60.96 125.73 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "209a20e2-7361-4856-976b-a7fda1adaaec")
+		(property "Reference" "H6"
+			(at 63.5 124.4599 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 63.5 126.9999 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
+			(at 60.96 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 60.96 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 60.96 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "gnimu-carrier-xiao-v1.0"
+				(path "/65596661-31e0-4577-a6dd-3a20692ddffd"
+					(reference "H6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 29.21 125.73 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2212979f-6350-47f2-a749-2a77920bbf5a")
+		(property "Reference" "H3"
+			(at 31.75 124.4599 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 31.75 126.9999 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
+			(at 29.21 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 29.21 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 29.21 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "gnimu-carrier-xiao-v1.0"
+				(path "/65596661-31e0-4577-a6dd-3a20692ddffd"
+					(reference "H3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 147.32 80.01 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "23dfdf70-082d-45f5-ad01-0a8e4a78f2f9")
+		(property "Reference" "T1"
+			(at 149.86 78.7399 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "GNSS Tie 1"
+			(at 149.86 81.2799 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
+			(at 147.32 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 147.32 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 147.32 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "gnimu-carrier-xiao-v1.0"
+				(path "/65596661-31e0-4577-a6dd-3a20692ddffd"
+					(reference "T1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 60.96 102.87 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2e7c226d-4bba-4f88-8f66-dee954d27781")
+		(property "Reference" "H4"
+			(at 63.5 101.5999 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 63.5 104.1399 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
+			(at 60.96 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 60.96 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 60.96 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "gnimu-carrier-xiao-v1.0"
+				(path "/65596661-31e0-4577-a6dd-3a20692ddffd"
+					(reference "H4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 177.8 55.88 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2358,29 +3020,31 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "104f7d29-dc6d-48bb-9e42-bbd7035716a8")
-		(property "Reference" "U1"
-			(at 48.26 24.13 0)
+		(uuid "411b02d6-a2e9-4785-9d93-d266b75b76ff")
+		(property "Reference" "R2"
+			(at 180.34 54.6099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "XIAO ESP32C6"
-			(at 48.26 26.67 0)
+		(property "Value" "510kΩ"
+			(at 180.34 57.1499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "Gnimu:XIAO_ESP32C6_THT"
-			(at 48.26 53.34 0)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+			(at 176.022 55.88 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2390,8 +3054,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://wiki.seeedstudio.com/xiao_esp32c6_getting_started/"
-			(at 48.26 39.37 0)
+		(property "Datasheet" ""
+			(at 177.8 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2401,8 +3065,8 @@
 				)
 			)
 		)
-		(property "Description" "Seeed XIAO ESP32C6, 14 edge pins only (through-hole). Pin names include ESP32-C6 GPIO numbers."
-			(at 48.26 39.37 0)
+		(property "Description" "Resistor"
+			(at 177.8 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2413,50 +3077,282 @@
 			)
 		)
 		(pin "1"
-			(uuid "5fc562fd-9849-4782-97a2-3f6589cd9bc5")
+			(uuid "0ebd1127-e429-43fe-8ea4-72f3517908a1")
 		)
 		(pin "2"
-			(uuid "dce9fe05-ac98-4e23-90fc-541cf6b1f818")
-		)
-		(pin "3"
-			(uuid "8e472fbc-6489-46f1-8438-a441c2746783")
-		)
-		(pin "4"
-			(uuid "0d283755-221c-4a61-b740-8e489676ff4e")
-		)
-		(pin "5"
-			(uuid "b0944bf8-2ad5-49e0-9f45-543bcde1d83c")
-		)
-		(pin "6"
-			(uuid "08a497fe-f842-4c71-995f-71655a1ba324")
-		)
-		(pin "7"
-			(uuid "9343571a-17b7-4dd9-b82f-45429625dafd")
-		)
-		(pin "8"
-			(uuid "dcc568be-eeae-4952-b56d-1e5eb477b865")
-		)
-		(pin "9"
-			(uuid "0b69d8ce-1480-4efa-a9e0-888f3ea30982")
-		)
-		(pin "14"
-			(uuid "272a590d-03e2-4bc5-a6f2-0ca0745c8db5")
-		)
-		(pin "12"
-			(uuid "3a75f6b0-bbee-41fb-9946-17ec156a9b2f")
-		)
-		(pin "13"
-			(uuid "d3d962cc-5e33-4111-9f8e-0e2962c88a2c")
-		)
-		(pin "11"
-			(uuid "e2567eea-5287-4c9a-920d-1756164efe98")
-		)
-		(pin "10"
-			(uuid "dc0161d2-cbb1-4064-813a-4a2e2873ea64")
+			(uuid "5df2a0e4-8f3e-4232-8adf-217186c7463a")
 		)
 		(instances
-			(project "gnimu-can-carrier-xiao-lipo-v1"
-				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
+			(project "gnimu-carrier-xiao-v1.0"
+				(path "/65596661-31e0-4577-a6dd-3a20692ddffd"
+					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 170.18 99.06 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "542ea73d-f952-4b1b-a943-16f2b3aa0b18")
+		(property "Reference" "T8"
+			(at 172.72 97.7899 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "XIAO Batt Tie 2"
+			(at 172.72 100.3299 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
+			(at 170.18 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 170.18 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 170.18 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "gnimu-carrier-xiao-v1.0"
+				(path "/65596661-31e0-4577-a6dd-3a20692ddffd"
+					(reference "T8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 29.21 114.3 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "63831ede-384a-4f41-9ff0-a91fca9ceb29")
+		(property "Reference" "H2"
+			(at 31.75 113.0299 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 31.75 115.5699 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
+			(at 29.21 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 29.21 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 29.21 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "gnimu-carrier-xiao-v1.0"
+				(path "/65596661-31e0-4577-a6dd-3a20692ddffd"
+					(reference "H2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Gnimu:XIAO_nRF52840_Sense")
+		(at 44.45 33.02 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6f228288-3116-43db-8939-457eafc73218")
+		(property "Reference" "U1"
+			(at 44.45 17.78 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "XIAO nRF52840 Sense"
+			(at 44.45 20.32 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Gnimu:XIAO_nRF52840_THT"
+			(at 44.45 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://wiki.seeedstudio.com/XIAO_BLE/"
+			(at 44.45 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Seeed XIAO nRF52840 Sense, 14 edge pins only (through-hole)"
+			(at 44.45 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "12"
+			(uuid "12ba62d2-7434-4035-8a4e-d959f5e03eea")
+		)
+		(pin "8"
+			(uuid "343d118e-66b0-4f44-b6e6-7ad40f002621")
+		)
+		(pin "9"
+			(uuid "e2963023-4e26-45e9-b04a-9838517c71e8")
+		)
+		(pin "14"
+			(uuid "68d29486-7b98-45b7-9b1f-9e0dab3c1576")
+		)
+		(pin "4"
+			(uuid "8ebb4699-cd9f-4512-9ee8-cd856786d32a")
+		)
+		(pin "10"
+			(uuid "88c9bad5-c54b-4205-a079-3a086c7e5512")
+		)
+		(pin "3"
+			(uuid "3ae5f742-6681-4d01-aa42-2ba292b0112f")
+		)
+		(pin "2"
+			(uuid "f39a63b9-cf02-4e22-8c85-3e68c3056a08")
+		)
+		(pin "1"
+			(uuid "55a444ca-a019-4ea9-be08-a14847414078")
+		)
+		(pin "13"
+			(uuid "a923358c-d3ce-498f-b4a9-0dd1812b19d4")
+		)
+		(pin "5"
+			(uuid "062d0cdb-cb92-4759-b081-2b2048479aed")
+		)
+		(pin "6"
+			(uuid "224e4616-dd2a-4754-9f51-116cd0c53f3c")
+		)
+		(pin "11"
+			(uuid "157cb262-1f42-42f3-b52a-1be28ef9747e")
+		)
+		(pin "7"
+			(uuid "0adc08dd-b4af-4705-afd5-4e9ee0185928")
+		)
+		(instances
+			(project "gnimu-carrier-xiao-v1.0"
+				(path "/65596661-31e0-4577-a6dd-3a20692ddffd"
 					(reference "U1")
 					(unit 1)
 				)
@@ -2464,242 +3360,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 134.62 71.12 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "15f3b0d0-dc0c-4ecd-9003-908865da74a0")
-		(property "Reference" "#FLG03"
-			(at 134.62 69.215 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 134.62 66.04 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 134.62 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 134.62 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 134.62 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "be8cf4ab-c05c-4855-a5d7-b0f4623754a7")
-		)
-		(instances
-			(project "gnimu-can-carrier-xiao-lipo-v1"
-				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
-					(reference "#FLG03")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 93.98 34.29 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "213601f4-2ff9-4660-aba7-430bc6bdfb94")
-		(property "Reference" "#PWR07"
-			(at 93.98 40.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 93.98 39.37 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 93.98 34.29 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 93.98 34.29 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 93.98 34.29 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "22e0070d-ef9d-40fc-9949-1aca82721fd6")
-		)
-		(instances
-			(project "gnimu-can-carrier-xiao-lipo-v1"
-				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
-					(reference "#PWR07")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 92.71 71.12 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "26160fb6-5c7c-4d29-a65d-df49899ed123")
-		(property "Reference" "#FLG02"
-			(at 92.71 69.215 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 92.71 66.04 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 92.71 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 92.71 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 92.71 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "15089989-86e3-43ce-81d4-54f56328893e")
-		)
-		(instances
-			(project "gnimu-can-carrier-xiao-lipo-v1"
-				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
-					(reference "#FLG02")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
-		(at 100.33 76.2 0)
+		(at 107.95 62.23 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2708,9 +3370,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "35ca4272-4b9a-4dc3-85ac-0878f3130dd2")
-		(property "Reference" "J3"
-			(at 102.87 76.1999 0)
+		(uuid "728d4c35-9058-4752-a6fc-4a8cf05396d5")
+		(property "Reference" "J6"
+			(at 110.49 62.2299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2720,8 +3382,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "BATT_IN"
-			(at 102.87 78.7399 0)
+		(property "Value" "BATT"
+			(at 110.49 64.7699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2732,7 +3394,7 @@
 			)
 		)
 		(property "Footprint" "Gnimu:Holes_1x02_P2.54mm"
-			(at 100.33 76.2 0)
+			(at 107.95 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2743,7 +3405,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 100.33 76.2 0)
+			(at 107.95 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2754,7 +3416,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 100.33 76.2 0)
+			(at 107.95 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2763,36 +3425,36 @@
 					(size 1.27 1.27)
 				)
 			)
+		)
+		(pin "1"
+			(uuid "4117cf4a-e3bd-4a66-9fc3-0eef79f8955f")
 		)
 		(pin "2"
-			(uuid "e7c7147e-0cee-400d-ac92-d6c788351ed9")
-		)
-		(pin "1"
-			(uuid "0d51313d-d3ad-484c-b043-ac7b668f4ba4")
+			(uuid "d85ea60a-f199-4290-8fa9-454428e2ab27")
 		)
 		(instances
-			(project "gnimu-can-carrier-xiao-lipo-v1"
-				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
-					(reference "J3")
+			(project "gnimu-carrier-xiao-v1.0"
+				(path "/65596661-31e0-4577-a6dd-3a20692ddffd"
+					(reference "J6")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x03")
-		(at 52.07 76.2 0)
+		(lib_id "Mechanical:MountingHole")
+		(at 147.32 92.71 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "3f4205f6-9d18-4a67-9c91-c435564a2a39")
-		(property "Reference" "J1"
-			(at 54.61 74.9299 0)
+		(uuid "866adf35-a529-4722-982f-01cee5c7d9c6")
+		(property "Reference" "T5"
+			(at 149.86 91.4399 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2802,8 +3464,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "CAN_IN"
-			(at 54.61 77.4699 0)
+		(property "Value" "Sw Tie 1"
+			(at 149.86 93.9799 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2813,8 +3475,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Gnimu:Holes_1x03_P2.54mm"
-			(at 52.07 76.2 0)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
+			(at 147.32 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2825,7 +3487,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 52.07 76.2 0)
+			(at 147.32 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2835,8 +3497,8 @@
 				)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 52.07 76.2 0)
+		(property "Description" "Mounting Hole without connection"
+			(at 147.32 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2845,39 +3507,30 @@
 					(size 1.27 1.27)
 				)
 			)
-		)
-		(pin "3"
-			(uuid "cb9280fd-a507-4224-8ca2-9fdae68cdd7f")
-		)
-		(pin "1"
-			(uuid "8e6696b7-01b5-45eb-bc75-f7df73449c13")
-		)
-		(pin "2"
-			(uuid "a15313ee-550d-49c5-8704-09ff6275c4ef")
 		)
 		(instances
-			(project "gnimu-can-carrier-xiao-lipo-v1"
-				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
-					(reference "J1")
+			(project "gnimu-carrier-xiao-v1.0"
+				(path "/65596661-31e0-4577-a6dd-3a20692ddffd"
+					(reference "T5")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 176.53 80.01 0)
+		(lib_id "Mechanical:MountingHole")
+		(at 170.18 92.71 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "47f24865-c7be-420b-b301-43856dbb0a0b")
-		(property "Reference" "C1"
-			(at 180.34 78.7399 0)
+		(uuid "88e07c50-17a1-42b4-93d2-4b8a4e10a4b5")
+		(property "Reference" "T6"
+			(at 172.72 91.4399 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2887,8 +3540,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF"
-			(at 180.34 81.2799 0)
+		(property "Value" "Sw Tie 2"
+			(at 172.72 93.9799 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2898,8 +3551,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D3.0mm_W2.0mm_P2.50mm"
-			(at 177.4952 83.82 0)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
+			(at 170.18 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2910,7 +3563,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 176.53 80.01 0)
+			(at 170.18 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2920,8 +3573,8 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
-			(at 176.53 80.01 0)
+		(property "Description" "Mounting Hole without connection"
+			(at 170.18 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2930,270 +3583,30 @@
 					(size 1.27 1.27)
 				)
 			)
-		)
-		(pin "1"
-			(uuid "0a92a934-98ed-46e8-99ee-51e1f6f52781")
-		)
-		(pin "2"
-			(uuid "e918f637-584d-4ebc-95d9-773916fea857")
 		)
 		(instances
-			(project "gnimu-can-carrier-xiao-lipo-v1"
-				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
-					(reference "C1")
+			(project "gnimu-carrier-xiao-v1.0"
+				(path "/65596661-31e0-4577-a6dd-3a20692ddffd"
+					(reference "T6")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "power:+BATT")
-		(at 41.91 107.95 0)
+		(lib_id "Mechanical:MountingHole")
+		(at 170.18 80.01 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "5321f012-565d-4cc8-a223-99e6b78f5248")
-		(property "Reference" "#PWR02"
-			(at 41.91 111.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "VBAT_RAW"
-			(at 41.91 102.87 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 41.91 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 41.91 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+BATT\""
-			(at 41.91 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "c250a8d3-72ff-4c51-b83f-3638422f89b4")
-		)
-		(instances
-			(project "gnimu-can-carrier-xiao-lipo-v1"
-				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
-					(reference "#PWR02")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 83.82 78.74 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5526d32b-bb9c-4adc-872d-f2d9fd764c08")
-		(property "Reference" "#PWR05"
-			(at 83.82 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 83.82 83.82 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 83.82 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 83.82 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 83.82 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "3ada2fb2-703f-47d0-9661-beb19fedd133")
-		)
-		(instances
-			(project "gnimu-can-carrier-xiao-lipo-v1"
-				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
-					(reference "#PWR05")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 176.53 83.82 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "58907d7a-f6b8-432c-845c-aa0447314ca4")
-		(property "Reference" "#PWR014"
-			(at 176.53 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 176.53 88.9 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 176.53 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 176.53 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 176.53 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "f5c487ae-10b0-4844-a80f-5ee6a0049b3b")
-		)
-		(instances
-			(project "gnimu-can-carrier-xiao-lipo-v1"
-				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
-					(reference "#PWR014")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 156.21 36.83 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "59da2aec-6c82-46e8-9e8c-e87579301772")
-		(property "Reference" "R1"
-			(at 158.75 35.5599 0)
+		(uuid "8a66b142-d7cc-4cdb-99e5-353aff9182e2")
+		(property "Reference" "T2"
+			(at 172.72 78.7399 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3203,8 +3616,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10kΩ"
-			(at 158.75 38.0999 0)
+		(property "Value" "GNSS Tie 2"
+			(at 172.72 81.2799 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3214,8 +3627,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
-			(at 154.432 36.83 90)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
+			(at 170.18 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3226,7 +3639,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 156.21 36.83 0)
+			(at 170.18 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3236,8 +3649,8 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
-			(at 156.21 36.83 0)
+		(property "Description" "Mounting Hole without connection"
+			(at 170.18 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3246,25 +3659,19 @@
 					(size 1.27 1.27)
 				)
 			)
-		)
-		(pin "2"
-			(uuid "5e6578cd-83ad-44d1-baca-b5565dee9573")
-		)
-		(pin "1"
-			(uuid "86950316-a0b7-47ec-b727-f555cbead019")
 		)
 		(instances
-			(project "gnimu-can-carrier-xiao-lipo-v1"
-				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
-					(reference "R1")
+			(project "gnimu-carrier-xiao-v1.0"
+				(path "/65596661-31e0-4577-a6dd-3a20692ddffd"
+					(reference "T2")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 170.18 36.83 0)
+		(lib_id "Connector_Generic:Conn_01x04")
+		(at 45.72 83.82 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3273,9 +3680,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "69fa8d0b-6ea2-4659-a964-7357a2aa3164")
-		(property "Reference" "R2"
-			(at 172.72 35.5599 0)
+		(uuid "8b4eebbe-6ffc-4b94-94b4-a2e297823ee7")
+		(property "Reference" "J2"
+			(at 48.26 83.8199 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3285,8 +3692,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100kΩ"
-			(at 172.72 38.0999 0)
+		(property "Value" "I2C"
+			(at 48.26 86.3599 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3296,8 +3703,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
-			(at 168.402 36.83 90)
+		(property "Footprint" "Gnimu:Holes_1x04_P2.54mm"
+			(at 45.72 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3308,7 +3715,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 170.18 36.83 0)
+			(at 45.72 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3318,89 +3725,8 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
-			(at 170.18 36.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "2181ed43-7bcf-40c1-b663-8c152ae94a31")
-		)
-		(pin "1"
-			(uuid "62b47cab-9d20-4389-b569-fa169a025eb7")
-		)
-		(instances
-			(project "gnimu-can-carrier-xiao-lipo-v1"
-				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
-					(reference "R2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+BATT")
-		(at 83.82 76.2 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6a37d2d8-74d9-47f7-8367-29d9be038d84")
-		(property "Reference" "#PWR04"
-			(at 83.82 80.01 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "VBAT_RAW"
-			(at 83.82 71.12 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 83.82 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 83.82 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+BATT\""
-			(at 83.82 76.2 0)
+		(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 45.72 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3411,263 +3737,97 @@
 			)
 		)
 		(pin "1"
-			(uuid "ff0e926a-c0bd-4ee4-a5a4-c4aedae4644a")
-		)
-		(instances
-			(project "gnimu-can-carrier-xiao-lipo-v1"
-				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
-					(reference "#PWR04")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 184.15 33.02 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "713d87a8-f1da-42c4-b4bf-b2073a93cfff")
-		(property "Reference" "#PWR015"
-			(at 184.15 26.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 184.15 27.94 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 184.15 33.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 184.15 33.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 184.15 33.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "9ce93487-705d-4945-be5e-4ff8bf7c4063")
-		)
-		(instances
-			(project "gnimu-can-carrier-xiao-lipo-v1"
-				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
-					(reference "#PWR015")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+BATT")
-		(at 170.18 33.02 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "787dcf45-fec3-47b1-9344-372e8388c378")
-		(property "Reference" "#PWR013"
-			(at 170.18 36.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "VSYS"
-			(at 170.18 27.94 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 170.18 33.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 170.18 33.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+BATT\""
-			(at 170.18 33.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "b50cffa7-6484-4dde-ba9f-8afee4bed082")
-		)
-		(instances
-			(project "gnimu-can-carrier-xiao-lipo-v1"
-				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
-					(reference "#PWR013")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Gnimu:Adafruit_CAN_Pal")
-		(at 127 38.1 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "803e09ef-77d6-4720-8384-18664e3e51b2")
-		(property "Reference" "U2"
-			(at 127 25.4 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "CAN Pal"
-			(at 127 27.94 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Gnimu:Adafruit_CAN_Pal_THT"
-			(at 127 52.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 127 38.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Adafruit CAN Pal CAN transceiver breakout. TX/RX to the MCU's CAN controller; S = silent/standby control."
-			(at 127 38.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "f6387c2a-be3b-472e-93a4-1be4db5e695e")
-		)
-		(pin "2"
-			(uuid "43c6d593-f19b-4a6a-b43a-caa821b432c6")
+			(uuid "d52acf6f-8f6f-43f5-98f2-ed8cbcdf0ed5")
 		)
 		(pin "4"
-			(uuid "c93aad92-a318-4d17-892b-5acf110bfbd8")
+			(uuid "96de0664-edb6-45ef-b557-506dfdcb8fec")
 		)
-		(pin "5"
-			(uuid "0699fcc2-2541-4b85-a31d-5cb4dd09d09a")
+		(pin "2"
+			(uuid "117be238-4c57-43ca-9637-ddba8622241c")
 		)
-		(pin "6"
-			(uuid "807e13e3-056e-44c6-b166-888819169015")
-		)
-		(pin "7"
-			(uuid "ba79aea5-fb79-4fce-a4b4-1638e8a19c30")
-		)
-		(pin "1"
-			(uuid "b92a26e6-92af-4a46-ad60-9e187c1371c0")
+		(pin "3"
+			(uuid "8c53374f-b485-41cd-a347-647300b27e59")
 		)
 		(instances
-			(project "gnimu-can-carrier-xiao-lipo-v1"
-				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
-					(reference "U2")
+			(project "gnimu-carrier-xiao-v1.0"
+				(path "/65596661-31e0-4577-a6dd-3a20692ddffd"
+					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 60.96 114.3 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8c5afd11-d761-44ef-9657-00176baa86b6")
+		(property "Reference" "H5"
+			(at 63.5 113.0299 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 63.5 115.5699 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
+			(at 60.96 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 60.96 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 60.96 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "gnimu-carrier-xiao-v1.0"
+				(path "/65596661-31e0-4577-a6dd-3a20692ddffd"
+					(reference "H5")
 					(unit 1)
 				)
 			)
@@ -3675,7 +3835,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
-		(at 140.97 76.2 0)
+		(at 107.95 85.09 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3684,9 +3844,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "8b272ea6-ed57-4550-9757-69eb7e0ecce9")
-		(property "Reference" "J4"
-			(at 143.51 76.1999 0)
+		(uuid "901ef8c8-fbe4-4e41-8cec-617794735986")
+		(property "Reference" "J5"
+			(at 110.49 85.0899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3697,7 +3857,7 @@
 			)
 		)
 		(property "Value" "XIAO_BATT"
-			(at 143.51 78.7399 0)
+			(at 110.49 87.6299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3708,7 +3868,7 @@
 			)
 		)
 		(property "Footprint" "Gnimu:Holes_1x02_P2.54mm"
-			(at 140.97 76.2 0)
+			(at 107.95 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3719,7 +3879,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 140.97 76.2 0)
+			(at 107.95 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3730,7 +3890,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 140.97 76.2 0)
+			(at 107.95 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3739,95 +3899,17 @@
 					(size 1.27 1.27)
 				)
 			)
+		)
+		(pin "1"
+			(uuid "f02c8204-af8f-43b8-a323-f870d7bda6d9")
 		)
 		(pin "2"
-			(uuid "1c3ad64c-cc7c-49c9-bf2b-d147c619c9e9")
-		)
-		(pin "1"
-			(uuid "558259af-63d6-4b20-9dca-61d499b0d196")
+			(uuid "bb030f6b-20d5-460c-8261-4d4474f4a72b")
 		)
 		(instances
-			(project "gnimu-can-carrier-xiao-lipo-v1"
-				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
-					(reference "J4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3V3")
-		(at 88.9 36.83 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a32b2fa0-2dca-47ba-9c6b-d91ce92846d4")
-		(property "Reference" "#PWR06"
-			(at 88.9 33.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 88.9 41.91 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 88.9 36.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 88.9 36.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 88.9 36.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "52c2c6bb-3bf8-4bc8-b803-34918e8cf7e4")
-		)
-		(instances
-			(project "gnimu-can-carrier-xiao-lipo-v1"
-				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
-					(reference "#PWR06")
+			(project "gnimu-carrier-xiao-v1.0"
+				(path "/65596661-31e0-4577-a6dd-3a20692ddffd"
+					(reference "J5")
 					(unit 1)
 				)
 			)
@@ -3835,7 +3917,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 184.15 36.83 0)
+		(at 152.4 55.88 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3844,9 +3926,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "aabd0139-38bd-463c-b2fc-4d26aa33639b")
-		(property "Reference" "R3"
-			(at 186.69 35.5599 0)
+		(uuid "9f422d00-9067-4f8b-b905-d6bc2b480e72")
+		(property "Reference" "R1"
+			(at 154.94 54.6099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3856,8 +3938,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100kΩ"
-			(at 186.69 38.0999 0)
+		(property "Value" "510kΩ"
+			(at 154.94 57.1499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3868,7 +3950,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
-			(at 182.372 36.83 90)
+			(at 150.622 55.88 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3879,7 +3961,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 184.15 36.83 0)
+			(at 152.4 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3890,7 +3972,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 184.15 36.83 0)
+			(at 152.4 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3900,24 +3982,100 @@
 				)
 			)
 		)
-		(pin "2"
-			(uuid "7296fa63-015d-4c80-9efc-a7943a0395f3")
-		)
 		(pin "1"
-			(uuid "56559f7a-f9ab-46f7-a204-d70ada0434c3")
+			(uuid "767eaec1-c2fc-479b-87e8-530535243ed4")
+		)
+		(pin "2"
+			(uuid "b04db064-c6f4-43fa-a1dd-250116b41f93")
 		)
 		(instances
-			(project "gnimu-can-carrier-xiao-lipo-v1"
-				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
-					(reference "R3")
+			(project "gnimu-carrier-xiao-v1.0"
+				(path "/65596661-31e0-4577-a6dd-3a20692ddffd"
+					(reference "R1")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x02")
-		(at 52.07 107.95 0)
+		(lib_id "Mechanical:MountingHole")
+		(at 29.21 102.87 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ae0133cb-fade-469e-b81c-aef711308f7e")
+		(property "Reference" "H1"
+			(at 31.75 101.5999 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 31.75 104.1399 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
+			(at 29.21 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 29.21 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 29.21 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "gnimu-carrier-xiao-v1.0"
+				(path "/65596661-31e0-4577-a6dd-3a20692ddffd"
+					(reference "H1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x03")
+		(at 73.66 63.5 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3926,9 +4084,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "afa0062b-682c-4900-a65b-50770b4cde62")
-		(property "Reference" "J2"
-			(at 54.61 107.9499 0)
+		(uuid "b5f62a38-0787-43f8-a667-7ea637806b70")
+		(property "Reference" "J4"
+			(at 76.2 62.2299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3939,7 +4097,7 @@
 			)
 		)
 		(property "Value" "Switch"
-			(at 54.61 110.4899 0)
+			(at 76.2 64.7699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3949,8 +4107,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Gnimu:Holes_1x02_P2.54mm"
-			(at 52.07 107.95 0)
+		(property "Footprint" "Gnimu:Holes_1x03_P2.54mm"
+			(at 73.66 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3961,7 +4119,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 52.07 107.95 0)
+			(at 73.66 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3971,8 +4129,8 @@
 				)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 52.07 107.95 0)
+		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 73.66 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3983,23 +4141,26 @@
 			)
 		)
 		(pin "2"
-			(uuid "95203a62-605b-469a-a20a-3c5fda377860")
+			(uuid "7abfc78f-f24d-425e-bae6-2bb46f87907f")
 		)
 		(pin "1"
-			(uuid "736064dd-0f3f-4cde-9fe6-4776da35842b")
+			(uuid "0c406995-9f43-43df-a4f1-0be690d8869e")
+		)
+		(pin "3"
+			(uuid "d3453212-fc48-4d91-9216-861f29666ca5")
 		)
 		(instances
-			(project "gnimu-can-carrier-xiao-lipo-v1"
-				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
-					(reference "J2")
+			(project "gnimu-carrier-xiao-v1.0"
+				(path "/65596661-31e0-4577-a6dd-3a20692ddffd"
+					(reference "J4")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 33.02 71.12 0)
+		(lib_id "Gnimu:XL63070_Module")
+		(at 107.95 33.02 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4008,10 +4169,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "c1892cca-207f-4f00-b0d5-8cbf360072fa")
-		(property "Reference" "#FLG01"
-			(at 33.02 69.215 0)
-			(hide yes)
+		(uuid "b71aaedc-aaa1-47e3-9301-ab4f5db86504")
+		(property "Reference" "U2"
+			(at 107.95 22.86 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4020,8 +4180,8 @@
 				)
 			)
 		)
-		(property "Value" "PWR_FLAG"
-			(at 33.02 66.04 0)
+		(property "Value" "XL63070"
+			(at 107.95 25.4 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4030,8 +4190,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 33.02 71.12 0)
+		(property "Footprint" "Gnimu:XL63070_THT"
+			(at 107.95 45.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4042,7 +4202,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 33.02 71.12 0)
+			(at 107.95 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4052,8 +4212,8 @@
 				)
 			)
 		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 33.02 71.12 0)
+		(property "Description" "XL63070 buck-boost module (TPS63070). EN high = on (on-module pull-up)."
+			(at 107.95 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4062,22 +4222,34 @@
 					(size 1.27 1.27)
 				)
 			)
+		)
+		(pin "3"
+			(uuid "1ae1256d-936c-4e93-af59-075e7df39a77")
+		)
+		(pin "5"
+			(uuid "77bfe8e4-7151-434a-b401-4e820459dc57")
+		)
+		(pin "2"
+			(uuid "8f4f6f90-5d3f-4ee7-9592-ac962be7387f")
 		)
 		(pin "1"
-			(uuid "bca12fa4-1166-42be-8a26-488e59ab7267")
+			(uuid "5980911a-12f5-4411-970e-86ca2b3c0655")
+		)
+		(pin "4"
+			(uuid "3cc2e2bd-7f0d-4524-b963-79d3fd07cb10")
 		)
 		(instances
-			(project "gnimu-can-carrier-xiao-lipo-v1"
-				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
-					(reference "#FLG01")
+			(project "gnimu-carrier-xiao-v1.0"
+				(path "/65596661-31e0-4577-a6dd-3a20692ddffd"
+					(reference "U2")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "power:+BATT")
-		(at 41.91 110.49 180)
+		(lib_id "Connector_Generic:Conn_01x06")
+		(at 73.66 82.55 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4086,30 +4258,31 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "dd350e8e-b02d-44cb-aac4-d4c07e2bd0a1")
-		(property "Reference" "#PWR03"
-			(at 41.91 106.68 0)
-			(hide yes)
+		(uuid "bf99957a-5f91-48d1-8a39-0f0342947c80")
+		(property "Reference" "J3"
+			(at 76.2 82.5499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "VSYS"
-			(at 41.91 115.57 0)
+		(property "Value" "GPIO"
+			(at 76.2 85.0899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 41.91 110.49 0)
+		(property "Footprint" "Gnimu:Holes_1x06_P2.54mm"
+			(at 73.66 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4120,7 +4293,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 41.91 110.49 0)
+			(at 73.66 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4130,8 +4303,8 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+BATT\""
-			(at 41.91 110.49 0)
+		(property "Description" "Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 73.66 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4140,54 +4313,70 @@
 					(size 1.27 1.27)
 				)
 			)
+		)
+		(pin "3"
+			(uuid "3901b98b-a43c-4655-a242-ffc3f12bbe82")
+		)
+		(pin "6"
+			(uuid "d7822be5-588d-4504-bbe6-d79b329b0702")
+		)
+		(pin "2"
+			(uuid "d30494d4-e3ce-4b99-a5a0-522c1214d445")
+		)
+		(pin "4"
+			(uuid "771831c1-78ab-417c-9e7c-68fa088ff6d2")
+		)
+		(pin "5"
+			(uuid "ec1abf47-407a-4a5a-b163-e4689da25e74")
 		)
 		(pin "1"
-			(uuid "e72485d8-1477-4b92-ae0c-2e38c8437d31")
+			(uuid "f9a41f0e-6689-4a51-8dd3-55cc463623f2")
 		)
 		(instances
-			(project "gnimu-can-carrier-xiao-lipo-v1"
-				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
-					(reference "#PWR03")
+			(project "gnimu-carrier-xiao-v1.0"
+				(path "/65596661-31e0-4577-a6dd-3a20692ddffd"
+					(reference "J3")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 127 49.53 0)
+		(lib_id "Mechanical:MountingHole")
+		(at 170.18 86.36 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "df6fbf92-f317-43d0-ace2-9073c1f69024")
-		(property "Reference" "#PWR09"
-			(at 127 55.88 0)
-			(hide yes)
+		(uuid "e552e668-d1b9-40f6-a5cf-69be2858c437")
+		(property "Reference" "T4"
+			(at 172.72 85.0899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "GND"
-			(at 127 54.61 0)
+		(property "Value" "Batt Tie 2"
+			(at 172.72 87.6299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 127 49.53 0)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
+			(at 170.18 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4198,7 +4387,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 127 49.53 0)
+			(at 170.18 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4208,8 +4397,8 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 127 49.53 0)
+		(property "Description" "Mounting Hole without connection"
+			(at 170.18 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4218,54 +4407,52 @@
 					(size 1.27 1.27)
 				)
 			)
-		)
-		(pin "1"
-			(uuid "4cbe6f90-dce2-457e-b0c6-25eef416d62f")
 		)
 		(instances
-			(project "gnimu-can-carrier-xiao-lipo-v1"
-				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
-					(reference "#PWR09")
+			(project "gnimu-carrier-xiao-v1.0"
+				(path "/65596661-31e0-4577-a6dd-3a20692ddffd"
+					(reference "T4")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "power:+BATT")
-		(at 128.27 76.2 0)
+		(lib_id "Mechanical:MountingHole")
+		(at 147.32 86.36 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "e130f191-fabe-4855-9c88-6d840420fe80")
-		(property "Reference" "#PWR010"
-			(at 128.27 80.01 0)
-			(hide yes)
+		(uuid "f6f0f986-0468-4072-b5d2-162ea69f1eb3")
+		(property "Reference" "T3"
+			(at 149.86 85.0899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "VSYS"
-			(at 128.27 71.12 0)
+		(property "Value" "Batt Tie 1"
+			(at 149.86 87.6299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 128.27 76.2 0)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
+			(at 147.32 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4276,7 +4463,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 128.27 76.2 0)
+			(at 147.32 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4286,8 +4473,8 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+BATT\""
-			(at 128.27 76.2 0)
+		(property "Description" "Mounting Hole without connection"
+			(at 147.32 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4296,54 +4483,52 @@
 					(size 1.27 1.27)
 				)
 			)
-		)
-		(pin "1"
-			(uuid "92aa37d2-0c82-431e-bd41-26fb53223f10")
 		)
 		(instances
-			(project "gnimu-can-carrier-xiao-lipo-v1"
-				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
-					(reference "#PWR010")
+			(project "gnimu-carrier-xiao-v1.0"
+				(path "/65596661-31e0-4577-a6dd-3a20692ddffd"
+					(reference "T3")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "power:+3V3")
-		(at 156.21 33.02 0)
+		(lib_id "Mechanical:MountingHole")
+		(at 147.32 99.06 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "e57eba44-cfb3-4e90-a08d-59b81621e532")
-		(property "Reference" "#PWR012"
-			(at 156.21 36.83 0)
-			(hide yes)
+		(uuid "ff3cacf9-1cb4-459c-8136-5d34e76bfc9e")
+		(property "Reference" "T7"
+			(at 149.86 97.7899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "+3V3"
-			(at 156.21 27.94 0)
+		(property "Value" "XIAO Batt Tie 1"
+			(at 149.86 100.3299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 156.21 33.02 0)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
+			(at 147.32 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4354,7 +4539,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 156.21 33.02 0)
+			(at 147.32 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4364,8 +4549,8 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 156.21 33.02 0)
+		(property "Description" "Mounting Hole without connection"
+			(at 147.32 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4374,170 +4559,11 @@
 					(size 1.27 1.27)
 				)
 			)
-		)
-		(pin "1"
-			(uuid "db3c094d-35e2-44d1-abb9-f25a8c98209e")
 		)
 		(instances
-			(project "gnimu-can-carrier-xiao-lipo-v1"
-				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
-					(reference "#PWR012")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3V3")
-		(at 110.49 33.02 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ea89f462-d62f-40ef-a28b-7ab78551c88d")
-		(property "Reference" "#PWR08"
-			(at 110.49 36.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 110.49 27.94 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 110.49 33.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 110.49 33.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 110.49 33.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "48b69668-c777-4f97-bd78-2350e8cdcbda")
-		)
-		(instances
-			(project "gnimu-can-carrier-xiao-lipo-v1"
-				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
-					(reference "#PWR08")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 29.21 76.2 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f237ebdc-ad1c-4003-807a-302bed6ee62a")
-		(property "Reference" "#PWR01"
-			(at 29.21 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 29.21 81.28 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 29.21 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 29.21 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 29.21 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "fdf9cde9-b47a-4fab-879b-bab678ee1f79")
-		)
-		(instances
-			(project "gnimu-can-carrier-xiao-lipo-v1"
-				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
-					(reference "#PWR01")
+			(project "gnimu-carrier-xiao-v1.0"
+				(path "/65596661-31e0-4577-a6dd-3a20692ddffd"
+					(reference "T7")
 					(unit 1)
 				)
 			)

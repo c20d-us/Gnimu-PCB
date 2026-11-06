@@ -2651,6 +2651,12 @@
 		(uuid "9235e9ba-5c3e-47db-91da-01c52821dc87")
 	)
 	(junction
+		(at 132.08 92.71)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a76393e3-df6a-4fcb-b51a-b549190beb52")
+	)
+	(junction
 		(at 33.02 76.2)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2722,7 +2728,7 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 91.44) (xy 140.97 91.44)
+			(xy 114.3 92.71) (xy 111.76 92.71)
 		)
 		(stroke
 			(width 0)
@@ -2769,6 +2775,26 @@
 			(type default)
 		)
 		(uuid "5db4b777-95a1-4b73-9163-417b250fd719")
+	)
+	(wire
+		(pts
+			(xy 147.32 92.71) (xy 144.78 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "74282dc0-b4f5-4bb7-be90-82cb811aeeb2")
+	)
+	(wire
+		(pts
+			(xy 129.54 92.71) (xy 132.08 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "79a8c191-149d-4ad7-b21f-8918f39bfb74")
 	)
 	(wire
 		(pts
@@ -2822,6 +2848,16 @@
 	)
 	(wire
 		(pts
+			(xy 132.08 90.17) (xy 132.08 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ab3aaba5-9b00-4a83-8ae0-8b6b3da4a54b")
+	)
+	(wire
+		(pts
 			(xy 33.02 97.79) (xy 41.91 97.79)
 		)
 		(stroke
@@ -2832,7 +2868,17 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 91.44) (xy 133.35 91.44)
+			(xy 132.08 92.71) (xy 137.16 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b26f2fb7-e7b0-4226-a282-85ac06d485f5")
+	)
+	(wire
+		(pts
+			(xy 100.33 92.71) (xy 104.14 92.71)
 		)
 		(stroke
 			(width 0)
@@ -3355,7 +3401,7 @@
 			(uuid "28b9b3a6-6a26-4124-9b7c-c5de9ce47255")
 		)
 		(instances
-			(project "gnimu-can-carrier-xiao-12v-v1"
+			(project "gnimu-can-carrier-xiao-12v-v1.0"
 				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
 					(reference "F1")
 					(unit 1)
@@ -3435,7 +3481,7 @@
 			(uuid "bf4dcf6c-79fa-4c65-95b2-10c9b789f2d1")
 		)
 		(instances
-			(project "gnimu-can-carrier-xiao-12v-v1"
+			(project "gnimu-can-carrier-xiao-12v-v1.0"
 				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
 					(reference "D1")
 					(unit 1)
@@ -3551,7 +3597,7 @@
 			(uuid "dc0161d2-cbb1-4064-813a-4a2e2873ea64")
 		)
 		(instances
-			(project "gnimu-can-carrier-xiao-12v-v1"
+			(project "gnimu-can-carrier-xiao-12v-v1.0"
 				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
 					(reference "U1")
 					(unit 1)
@@ -3634,7 +3680,7 @@
 			(uuid "6c72d55b-9e8a-4da7-a6dd-cd69b665cd2a")
 		)
 		(instances
-			(project "gnimu-can-carrier-xiao-12v-v1"
+			(project "gnimu-can-carrier-xiao-12v-v1.0"
 				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
 					(reference "U3")
 					(unit 1)
@@ -3716,7 +3762,7 @@
 			(uuid "dfe65a19-158b-4377-b9fc-5d34712fa32c")
 		)
 		(instances
-			(project "gnimu-can-carrier-xiao-12v-v1"
+			(project "gnimu-can-carrier-xiao-12v-v1.0"
 				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
 					(reference "C2")
 					(unit 1)
@@ -3794,7 +3840,7 @@
 			(uuid "22e0070d-ef9d-40fc-9949-1aca82721fd6")
 		)
 		(instances
-			(project "gnimu-can-carrier-xiao-12v-v1"
+			(project "gnimu-can-carrier-xiao-12v-v1.0"
 				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
 					(reference "#PWR07")
 					(unit 1)
@@ -3804,7 +3850,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 129.54 91.44 180)
+		(at 100.33 92.71 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3815,7 +3861,7 @@
 		(fields_autoplaced yes)
 		(uuid "2298c40f-eb5c-48fc-a2ef-35ef8d49ccff")
 		(property "Reference" "#PWR022"
-			(at 129.54 87.63 0)
+			(at 100.33 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3826,7 +3872,7 @@
 			)
 		)
 		(property "Value" "VBUS"
-			(at 129.54 96.52 0)
+			(at 100.33 97.79 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3836,7 +3882,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 129.54 91.44 0)
+			(at 100.33 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3847,7 +3893,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 129.54 91.44 0)
+			(at 100.33 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3858,7 +3904,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 129.54 91.44 0)
+			(at 100.33 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3872,7 +3918,7 @@
 			(uuid "64580251-79b0-4674-8ab0-25d1d7b92159")
 		)
 		(instances
-			(project "gnimu-can-carrier-xiao-12v-v1"
+			(project "gnimu-can-carrier-xiao-12v-v1.0"
 				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
 					(reference "#PWR022")
 					(unit 1)
@@ -3950,7 +3996,7 @@
 			(uuid "15089989-86e3-43ce-81d4-54f56328893e")
 		)
 		(instances
-			(project "gnimu-can-carrier-xiao-12v-v1"
+			(project "gnimu-can-carrier-xiao-12v-v1.0"
 				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
 					(reference "#FLG02")
 					(unit 1)
@@ -3960,7 +4006,7 @@
 	)
 	(symbol
 		(lib_id "Diode:1N5819")
-		(at 137.16 91.44 0)
+		(at 107.95 92.71 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3970,8 +4016,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2b78c8f1-293b-4020-ad2b-593b5edff392")
-		(property "Reference" "D2"
-			(at 136.8425 85.09 0)
+		(property "Reference" "D3"
+			(at 107.6325 86.36 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3981,7 +4027,7 @@
 			)
 		)
 		(property "Value" "1N5819"
-			(at 136.8425 87.63 0)
+			(at 107.6325 88.9 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3991,7 +4037,7 @@
 			)
 		)
 		(property "Footprint" "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
-			(at 137.16 95.885 0)
+			(at 107.95 97.155 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4002,7 +4048,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.vishay.com/docs/88525/1n5817.pdf"
-			(at 137.16 91.44 0)
+			(at 107.95 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4013,7 +4059,7 @@
 			)
 		)
 		(property "Description" "40V 1A Schottky Barrier Rectifier Diode, DO-41"
-			(at 137.16 91.44 0)
+			(at 107.95 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4030,9 +4076,9 @@
 			(uuid "17b7ac59-9807-48d9-9cfa-5e1dd0c21bc2")
 		)
 		(instances
-			(project "gnimu-can-carrier-xiao-12v-v1"
+			(project "gnimu-can-carrier-xiao-12v-v1.0"
 				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
-					(reference "D2")
+					(reference "D3")
 					(unit 1)
 				)
 			)
@@ -4108,7 +4154,7 @@
 			(uuid "c52b7ece-984f-4db7-a95a-460bcbccc721")
 		)
 		(instances
-			(project "gnimu-can-carrier-xiao-12v-v1"
+			(project "gnimu-can-carrier-xiao-12v-v1.0"
 				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
 					(reference "#PWR010")
 					(unit 1)
@@ -4190,9 +4236,89 @@
 			(uuid "0d51313d-d3ad-484c-b043-ac7b668f4ba4")
 		)
 		(instances
-			(project "gnimu-can-carrier-xiao-12v-v1"
+			(project "gnimu-can-carrier-xiao-12v-v1.0"
 				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
 					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N5819")
+		(at 140.97 92.71 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "395e6cae-7822-4d1b-99ed-612dca75ee89")
+		(property "Reference" "D2"
+			(at 140.6525 86.36 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N5819"
+			(at 140.6525 88.9 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
+			(at 140.97 97.155 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "http://www.vishay.com/docs/88525/1n5817.pdf"
+			(at 140.97 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "40V 1A Schottky Barrier Rectifier Diode, DO-41"
+			(at 140.97 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "de4b0dfc-5a03-4bd7-8e30-9230df30b6c5")
+		)
+		(pin "2"
+			(uuid "6e5a04b8-1f68-4c64-bd4a-6ccd32955dac")
+		)
+		(instances
+			(project "gnimu-can-carrier-xiao-12v-v1.0"
+				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
+					(reference "D2")
 					(unit 1)
 				)
 			)
@@ -4275,7 +4401,7 @@
 			(uuid "a15313ee-550d-49c5-8704-09ff6275c4ef")
 		)
 		(instances
-			(project "gnimu-can-carrier-xiao-12v-v1"
+			(project "gnimu-can-carrier-xiao-12v-v1.0"
 				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
 					(reference "J1")
 					(unit 1)
@@ -4357,7 +4483,7 @@
 			(uuid "e918f637-584d-4ebc-95d9-773916fea857")
 		)
 		(instances
-			(project "gnimu-can-carrier-xiao-12v-v1"
+			(project "gnimu-can-carrier-xiao-12v-v1.0"
 				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
 					(reference "C1")
 					(unit 1)
@@ -4435,7 +4561,7 @@
 			(uuid "7228b3bf-430d-43db-afb6-03ae3e51347a")
 		)
 		(instances
-			(project "gnimu-can-carrier-xiao-12v-v1"
+			(project "gnimu-can-carrier-xiao-12v-v1.0"
 				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
 					(reference "#FLG03")
 					(unit 1)
@@ -4513,7 +4639,7 @@
 			(uuid "3ada2fb2-703f-47d0-9661-beb19fedd133")
 		)
 		(instances
-			(project "gnimu-can-carrier-xiao-12v-v1"
+			(project "gnimu-can-carrier-xiao-12v-v1.0"
 				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
 					(reference "#PWR05")
 					(unit 1)
@@ -4591,7 +4717,7 @@
 			(uuid "f5c487ae-10b0-4844-a80f-5ee6a0049b3b")
 		)
 		(instances
-			(project "gnimu-can-carrier-xiao-12v-v1"
+			(project "gnimu-can-carrier-xiao-12v-v1.0"
 				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
 					(reference "#PWR014")
 					(unit 1)
@@ -4673,7 +4799,7 @@
 			(uuid "86950316-a0b7-47ec-b727-f555cbead019")
 		)
 		(instances
-			(project "gnimu-can-carrier-xiao-12v-v1"
+			(project "gnimu-can-carrier-xiao-12v-v1.0"
 				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
 					(reference "R1")
 					(unit 1)
@@ -4704,7 +4830,7 @@
 				)
 			)
 		)
-		(property "Value" "+12V_F"
+		(property "Value" "+12V_P"
 			(at 44.45 127 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4751,7 +4877,7 @@
 			(uuid "a242f69f-481b-4dca-a3f0-770037ac132d")
 		)
 		(instances
-			(project "gnimu-can-carrier-xiao-12v-v1"
+			(project "gnimu-can-carrier-xiao-12v-v1.0"
 				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
 					(reference "#PWR024")
 					(unit 1)
@@ -4833,9 +4959,87 @@
 			(uuid "62b47cab-9d20-4389-b569-fa169a025eb7")
 		)
 		(instances
-			(project "gnimu-can-carrier-xiao-12v-v1"
+			(project "gnimu-can-carrier-xiao-12v-v1.0"
 				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
 					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+12V")
+		(at 147.32 92.71 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6e9cdc38-8f9e-44ad-824e-b24494ea2c6f")
+		(property "Reference" "#PWR016"
+			(at 147.32 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+12V_F"
+			(at 147.32 97.79 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 147.32 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 147.32 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+12V\""
+			(at 147.32 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "295b66b0-6416-49fb-8839-835762c1fd21")
+		)
+		(instances
+			(project "gnimu-can-carrier-xiao-12v-v1.0"
+				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
+					(reference "#PWR016")
 					(unit 1)
 				)
 			)
@@ -4911,7 +5115,7 @@
 			(uuid "bb197857-4aee-4132-a6ef-5afb877a0690")
 		)
 		(instances
-			(project "gnimu-can-carrier-xiao-12v-v1"
+			(project "gnimu-can-carrier-xiao-12v-v1.0"
 				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
 					(reference "#FLG05")
 					(unit 1)
@@ -4921,7 +5125,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 143.51 91.44 180)
+		(at 114.3 92.71 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4932,7 +5136,7 @@
 		(fields_autoplaced yes)
 		(uuid "72edaf3e-25cc-4575-a883-b933d69bf4cd")
 		(property "Reference" "#PWR021"
-			(at 143.51 87.63 0)
+			(at 114.3 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4943,7 +5147,7 @@
 			)
 		)
 		(property "Value" "+5V_REG"
-			(at 143.51 96.52 0)
+			(at 114.3 97.79 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4953,7 +5157,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 143.51 91.44 0)
+			(at 114.3 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4964,7 +5168,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 143.51 91.44 0)
+			(at 114.3 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4975,7 +5179,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 143.51 91.44 0)
+			(at 114.3 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4989,7 +5193,7 @@
 			(uuid "a3dbee78-627d-4c9b-ba6b-a89406689170")
 		)
 		(instances
-			(project "gnimu-can-carrier-xiao-12v-v1"
+			(project "gnimu-can-carrier-xiao-12v-v1.0"
 				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
 					(reference "#PWR021")
 					(unit 1)
@@ -5067,7 +5271,7 @@
 			(uuid "e994bb37-da13-4b52-af56-b54e332de650")
 		)
 		(instances
-			(project "gnimu-can-carrier-xiao-12v-v1"
+			(project "gnimu-can-carrier-xiao-12v-v1.0"
 				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
 					(reference "#PWR020")
 					(unit 1)
@@ -5149,7 +5353,7 @@
 			(uuid "237102f1-c0f5-44bc-8c7d-147e40ad73df")
 		)
 		(instances
-			(project "gnimu-can-carrier-xiao-12v-v1"
+			(project "gnimu-can-carrier-xiao-12v-v1.0"
 				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
 					(reference "J3")
 					(unit 1)
@@ -5227,7 +5431,7 @@
 			(uuid "336da39f-7135-465d-aaa2-34e9ba8ceb60")
 		)
 		(instances
-			(project "gnimu-can-carrier-xiao-12v-v1"
+			(project "gnimu-can-carrier-xiao-12v-v1.0"
 				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
 					(reference "#PWR028")
 					(unit 1)
@@ -5322,7 +5526,7 @@
 			(uuid "b92a26e6-92af-4a46-ad60-9e187c1371c0")
 		)
 		(instances
-			(project "gnimu-can-carrier-xiao-12v-v1"
+			(project "gnimu-can-carrier-xiao-12v-v1.0"
 				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
 					(reference "U2")
 					(unit 1)
@@ -5400,9 +5604,87 @@
 			(uuid "b934306a-51a7-47dd-aae6-76b842fcf08e")
 		)
 		(instances
-			(project "gnimu-can-carrier-xiao-12v-v1"
+			(project "gnimu-can-carrier-xiao-12v-v1.0"
 				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
 					(reference "#PWR027")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+12V")
+		(at 129.54 92.71 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8b9bdcca-ef4f-4b85-8554-c74d2bef63d7")
+		(property "Reference" "#PWR017"
+			(at 129.54 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+12V_P"
+			(at 129.54 97.79 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 129.54 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 129.54 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+12V\""
+			(at 129.54 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "83d4f776-f0da-4407-be1f-13cae2a96b28")
+		)
+		(instances
+			(project "gnimu-can-carrier-xiao-12v-v1.0"
+				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
+					(reference "#PWR017")
 					(unit 1)
 				)
 			)
@@ -5478,7 +5760,7 @@
 			(uuid "82130390-f574-4c03-8d78-e2495fbd568d")
 		)
 		(instances
-			(project "gnimu-can-carrier-xiao-12v-v1"
+			(project "gnimu-can-carrier-xiao-12v-v1.0"
 				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
 					(reference "#PWR023")
 					(unit 1)
@@ -5556,9 +5838,87 @@
 			(uuid "87b597c0-aec3-4a66-87bf-767721d90f30")
 		)
 		(instances
-			(project "gnimu-can-carrier-xiao-12v-v1"
+			(project "gnimu-can-carrier-xiao-12v-v1.0"
 				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
 					(reference "#PWR02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 132.08 90.17 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9c19a3ea-df95-4b51-906f-ba336a1765c6")
+		(property "Reference" "#FLG06"
+			(at 132.08 88.265 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 132.08 85.09 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 132.08 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 132.08 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 132.08 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "af092a6b-ff02-4d5f-a506-ecb78e5c41fa")
+		)
+		(instances
+			(project "gnimu-can-carrier-xiao-12v-v1.0"
+				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
+					(reference "#FLG06")
 					(unit 1)
 				)
 			)
@@ -5634,7 +5994,7 @@
 			(uuid "52c2c6bb-3bf8-4bc8-b803-34918e8cf7e4")
 		)
 		(instances
-			(project "gnimu-can-carrier-xiao-12v-v1"
+			(project "gnimu-can-carrier-xiao-12v-v1.0"
 				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
 					(reference "#PWR06")
 					(unit 1)
@@ -5716,7 +6076,7 @@
 			(uuid "56559f7a-f9ab-46f7-a204-d70ada0434c3")
 		)
 		(instances
-			(project "gnimu-can-carrier-xiao-12v-v1"
+			(project "gnimu-can-carrier-xiao-12v-v1.0"
 				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
 					(reference "R3")
 					(unit 1)
@@ -5794,7 +6154,7 @@
 			(uuid "c96710a0-5612-4e0b-a44b-019678621c9c")
 		)
 		(instances
-			(project "gnimu-can-carrier-xiao-12v-v1"
+			(project "gnimu-can-carrier-xiao-12v-v1.0"
 				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
 					(reference "#PWR025")
 					(unit 1)
@@ -5872,7 +6232,7 @@
 			(uuid "bca12fa4-1166-42be-8a26-488e59ab7267")
 		)
 		(instances
-			(project "gnimu-can-carrier-xiao-12v-v1"
+			(project "gnimu-can-carrier-xiao-12v-v1.0"
 				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
 					(reference "#FLG01")
 					(unit 1)
@@ -5950,7 +6310,7 @@
 			(uuid "567763dc-cc6a-472a-a4b8-7b88dbee569d")
 		)
 		(instances
-			(project "gnimu-can-carrier-xiao-12v-v1"
+			(project "gnimu-can-carrier-xiao-12v-v1.0"
 				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
 					(reference "#PWR026")
 					(unit 1)
@@ -6028,7 +6388,7 @@
 			(uuid "1924b285-b7e5-4c9b-ba31-f8677ac81c14")
 		)
 		(instances
-			(project "gnimu-can-carrier-xiao-12v-v1"
+			(project "gnimu-can-carrier-xiao-12v-v1.0"
 				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
 					(reference "#PWR013")
 					(unit 1)
@@ -6106,7 +6466,7 @@
 			(uuid "b3937473-9210-4048-98b7-07fb4d855594")
 		)
 		(instances
-			(project "gnimu-can-carrier-xiao-12v-v1"
+			(project "gnimu-can-carrier-xiao-12v-v1.0"
 				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
 					(reference "#PWR019")
 					(unit 1)
@@ -6184,7 +6544,7 @@
 			(uuid "4cbe6f90-dce2-457e-b0c6-25eef416d62f")
 		)
 		(instances
-			(project "gnimu-can-carrier-xiao-12v-v1"
+			(project "gnimu-can-carrier-xiao-12v-v1.0"
 				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
 					(reference "#PWR09")
 					(unit 1)
@@ -6262,7 +6622,7 @@
 			(uuid "db3c094d-35e2-44d1-abb9-f25a8c98209e")
 		)
 		(instances
-			(project "gnimu-can-carrier-xiao-12v-v1"
+			(project "gnimu-can-carrier-xiao-12v-v1.0"
 				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
 					(reference "#PWR012")
 					(unit 1)
@@ -6340,7 +6700,7 @@
 			(uuid "26fd09e4-1f47-412c-9931-dcc7d189e944")
 		)
 		(instances
-			(project "gnimu-can-carrier-xiao-12v-v1"
+			(project "gnimu-can-carrier-xiao-12v-v1.0"
 				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
 					(reference "#PWR03")
 					(unit 1)
@@ -6418,7 +6778,7 @@
 			(uuid "71144ce6-18e4-4472-93fa-70c3f73aa671")
 		)
 		(instances
-			(project "gnimu-can-carrier-xiao-12v-v1"
+			(project "gnimu-can-carrier-xiao-12v-v1.0"
 				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
 					(reference "#FLG04")
 					(unit 1)
@@ -6496,7 +6856,7 @@
 			(uuid "f9574e8f-93b1-4c06-8deb-b8d2212fed8a")
 		)
 		(instances
-			(project "gnimu-can-carrier-xiao-12v-v1"
+			(project "gnimu-can-carrier-xiao-12v-v1.0"
 				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
 					(reference "#PWR04")
 					(unit 1)
@@ -6574,7 +6934,7 @@
 			(uuid "48b69668-c777-4f97-bd78-2350e8cdcbda")
 		)
 		(instances
-			(project "gnimu-can-carrier-xiao-12v-v1"
+			(project "gnimu-can-carrier-xiao-12v-v1.0"
 				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
 					(reference "#PWR08")
 					(unit 1)
@@ -6652,7 +7012,7 @@
 			(uuid "fdf9cde9-b47a-4fab-879b-bab678ee1f79")
 		)
 		(instances
-			(project "gnimu-can-carrier-xiao-12v-v1"
+			(project "gnimu-can-carrier-xiao-12v-v1.0"
 				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
 					(reference "#PWR01")
 					(unit 1)
@@ -6730,7 +7090,7 @@
 			(uuid "68988b58-6c25-49a4-ac44-5e7e4977c075")
 		)
 		(instances
-			(project "gnimu-can-carrier-xiao-12v-v1"
+			(project "gnimu-can-carrier-xiao-12v-v1.0"
 				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
 					(reference "#PWR011")
 					(unit 1)
@@ -6808,7 +7168,7 @@
 			(uuid "2ea3499e-1e4b-4e8a-bf5c-851e8c41c693")
 		)
 		(instances
-			(project "gnimu-can-carrier-xiao-12v-v1"
+			(project "gnimu-can-carrier-xiao-12v-v1.0"
 				(path "/b4719a39-f83c-4637-b02f-49d0f0ba5756"
 					(reference "#PWR015")
 					(unit 1)

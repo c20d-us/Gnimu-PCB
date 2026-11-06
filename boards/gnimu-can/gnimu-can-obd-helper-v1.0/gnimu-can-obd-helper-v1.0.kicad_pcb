@@ -198,7 +198,7 @@
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/d8a1d8f9-8daf-46da-8224-8a2d6bff2a4b")
 		(sheetname "/")
-		(sheetfile "gnimu-can-obd-helper-v1.kicad_sch")
+		(sheetfile "gnimu-can-obd-helper-v1.0.kicad_sch")
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -578,7 +578,7 @@
 		(property ki_fp_filters "SOT?23*")
 		(path "/b73c2e7d-e836-4bee-ab66-68a82e33d294")
 		(sheetname "/")
-		(sheetfile "gnimu-can-obd-helper-v1.kicad_sch")
+		(sheetfile "gnimu-can-obd-helper-v1.0.kicad_sch")
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -956,7 +956,7 @@
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/a120bc18-b0b6-4d2d-bb8a-2595a0140969")
 		(sheetname "/")
-		(sheetfile "gnimu-can-obd-helper-v1.kicad_sch")
+		(sheetfile "gnimu-can-obd-helper-v1.0.kicad_sch")
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -1373,7 +1373,7 @@
 		)
 		(path "/7f97ab34-99b5-4ec9-bf88-70a9ff6d756d")
 		(sheetname "/")
-		(sheetfile "gnimu-can-obd-helper-v1.kicad_sch")
+		(sheetfile "gnimu-can-obd-helper-v1.0.kicad_sch")
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect

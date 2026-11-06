@@ -6,8 +6,8 @@
 	(paper "A5")
 	(title_block
 		(title "Gnimu-CAN OBD-II Helper Board")
-		(date "2026-10-24")
-		(rev "v1.0")
+		(date "2026-11-04")
+		(rev "v1.1")
 	)
 	(lib_symbols
 		(symbol "Connector_Generic:Conn_01x02"
@@ -1400,6 +1400,16 @@
 	)
 	(wire
 		(pts
+			(xy 81.28 71.12) (xy 82.55 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0ddfe03a-5e35-49d1-974c-a7e6224ea682")
+	)
+	(wire
+		(pts
 			(xy 99.06 31.75) (xy 99.06 35.56)
 		)
 		(stroke
@@ -1440,7 +1450,7 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 68.58) (xy 82.55 68.58)
+			(xy 81.28 68.58) (xy 82.55 68.58)
 		)
 		(stroke
 			(width 0)
@@ -1722,7 +1732,7 @@
 			(uuid "f45af1b6-ba22-4a26-8c51-2316ac42b7c1")
 		)
 		(instances
-			(project "gnimu-can-obd-helper-v1"
+			(project "gnimu-can-obd-helper-v1.1"
 				(path "/6b6e5c58-bf83-43da-bd11-c27e929b830c"
 					(reference "#PWR06")
 					(unit 1)
@@ -1800,87 +1810,9 @@
 			(uuid "a053e6dc-2537-43bd-aa78-693b1aba51a5")
 		)
 		(instances
-			(project "gnimu-can-obd-helper-v1"
+			(project "gnimu-can-obd-helper-v1.1"
 				(path "/6b6e5c58-bf83-43da-bd11-c27e929b830c"
 					(reference "#FLG02")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 82.55 71.12 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "61bc86cb-e7b3-48fd-b3c7-3d616e6cf0a5")
-		(property "Reference" "#PWR03"
-			(at 82.55 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 82.55 76.2 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 82.55 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 82.55 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 82.55 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "60061ab2-9f99-4d62-801e-42d661c59e60")
-		)
-		(instances
-			(project "gnimu-can-obd-helper-v1"
-				(path "/6b6e5c58-bf83-43da-bd11-c27e929b830c"
-					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -1956,7 +1888,7 @@
 			(uuid "24a94ed1-003f-4460-ae21-eba04d9894f5")
 		)
 		(instances
-			(project "gnimu-can-obd-helper-v1"
+			(project "gnimu-can-obd-helper-v1.1"
 				(path "/6b6e5c58-bf83-43da-bd11-c27e929b830c"
 					(reference "#PWR05")
 					(unit 1)
@@ -2078,7 +2010,7 @@
 			(uuid "1bd255f3-1a78-45f5-8524-8c614ffb22a4")
 		)
 		(instances
-			(project "gnimu-can-obd-helper-v1"
+			(project "gnimu-can-obd-helper-v1.1"
 				(path "/6b6e5c58-bf83-43da-bd11-c27e929b830c"
 					(reference "J1")
 					(unit 1)
@@ -2156,7 +2088,7 @@
 			(uuid "7011bae2-59cd-4ad0-9987-667480a49f12")
 		)
 		(instances
-			(project "gnimu-can-obd-helper-v1"
+			(project "gnimu-can-obd-helper-v1.1"
 				(path "/6b6e5c58-bf83-43da-bd11-c27e929b830c"
 					(reference "#PWR02")
 					(unit 1)
@@ -2234,87 +2166,9 @@
 			(uuid "6d6bef0b-cd73-4e41-b6f2-fc856f819a9d")
 		)
 		(instances
-			(project "gnimu-can-obd-helper-v1"
+			(project "gnimu-can-obd-helper-v1.1"
 				(path "/6b6e5c58-bf83-43da-bd11-c27e929b830c"
 					(reference "#FLG01")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+12V")
-		(at 77.47 68.58 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9dcdbefa-8d41-46e1-8ff4-3e972aae57ae")
-		(property "Reference" "#PWR04"
-			(at 77.47 64.77 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+12V"
-			(at 77.47 73.66 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 77.47 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 77.47 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 77.47 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "ab8673a1-2905-429a-b6ea-fec6d6c6a3d9")
-		)
-		(instances
-			(project "gnimu-can-obd-helper-v1"
-				(path "/6b6e5c58-bf83-43da-bd11-c27e929b830c"
-					(reference "#PWR04")
 					(unit 1)
 				)
 			)
@@ -2397,9 +2251,87 @@
 			(uuid "8852f8c2-1c69-473f-91f4-2f26750cdfbf")
 		)
 		(instances
-			(project "gnimu-can-obd-helper-v1"
+			(project "gnimu-can-obd-helper-v1.1"
 				(path "/6b6e5c58-bf83-43da-bd11-c27e929b830c"
 					(reference "J3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 81.28 68.58 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a71de6a6-ed7c-45ce-9abf-27f18048021f")
+		(property "Reference" "#PWR03"
+			(at 81.28 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 81.28 63.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 81.28 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 81.28 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 81.28 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c5b2a0cd-0100-44aa-8a77-82226a512cce")
+		)
+		(instances
+			(project "gnimu-can-obd-helper-v1.1"
+				(path "/6b6e5c58-bf83-43da-bd11-c27e929b830c"
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -2483,7 +2415,7 @@
 			(uuid "01d26f0c-e820-4ee6-b2ec-1ef84d88912c")
 		)
 		(instances
-			(project "gnimu-can-obd-helper-v1"
+			(project "gnimu-can-obd-helper-v1.1"
 				(path "/6b6e5c58-bf83-43da-bd11-c27e929b830c"
 					(reference "D1")
 					(unit 1)
@@ -2565,7 +2497,7 @@
 			(uuid "d256d4e5-cb9a-4d5d-b659-018c85744ae5")
 		)
 		(instances
-			(project "gnimu-can-obd-helper-v1"
+			(project "gnimu-can-obd-helper-v1.1"
 				(path "/6b6e5c58-bf83-43da-bd11-c27e929b830c"
 					(reference "J2")
 					(unit 1)
@@ -2643,9 +2575,87 @@
 			(uuid "a7e77bc1-ffc3-4382-9920-1b608bddff2c")
 		)
 		(instances
-			(project "gnimu-can-obd-helper-v1"
+			(project "gnimu-can-obd-helper-v1.1"
 				(path "/6b6e5c58-bf83-43da-bd11-c27e929b830c"
 					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+12V")
+		(at 81.28 71.12 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f5494874-bcfe-42c3-b21e-876e9610a397")
+		(property "Reference" "#PWR04"
+			(at 81.28 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+12V"
+			(at 81.28 76.2 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 81.28 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 81.28 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+12V\""
+			(at 81.28 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "45461b04-e414-4a9f-aae9-18f03dffca60")
+		)
+		(instances
+			(project "gnimu-can-obd-helper-v1.1"
+				(path "/6b6e5c58-bf83-43da-bd11-c27e929b830c"
+					(reference "#PWR04")
 					(unit 1)
 				)
 			)
