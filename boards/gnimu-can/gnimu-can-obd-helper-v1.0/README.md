@@ -5,12 +5,27 @@ A small board that fits over the exposed pins on the back of a straight-pin J196
 It is part of the Gnimu-CAN telemetry reader. The CAN socket feeds either [CAN carrier](../); the 12V socket is needed only for the 12V carrier and can be left unpopulated for the LiPo one.
 
 > [!NOTE]
-> **Fabricated; fit confirmed, not yet assembled.** v1.0 was ordered from OSH Park on 2026-10-24 and arrived 2026-11-05. The board slides snugly over a real plug's pins and sits flush on the flange; the two ground pins (4 and 5) only just poke through, as expected. Assembly and continuity notes will follow.
+> **Fabricated; fit and test assembly confirmed.** v1.0 was ordered from OSH Park. The board slides snugly over a real plug's pins and sits flush on the flange; the two ground pins (4 and 5) only just poke through, as expected.
+>
+> **Test assembly:** D1 and both sockets soldered on one board. Every connected point shows continuity, including GND between the two sockets. CAN_H–CAN_L, CAN_H–GND, CAN_L–GND and +12V–GND all read open, as they should. Not yet fitted to a plug: the plugs are being kept for v1.1 boards.
 
 > [!WARNING]
 > **J2's pin order doesn't match pre-made red/black JST PH leads.** On v1.0, J2 pin 1 is +12V and pin 2 is GND. The pre-crimped red/black PH leads bought for this project put black on pin 1 and red on pin 2, so plugged into v1.0 the **black wire carries +12V and the red wire is ground**. Check your own leads before plugging one in.
 >
 > To use a v1.0 board, swap the two wires in the lead's PHR-2 housing: lift each contact's latch through the housing window with a needle or extraction tool, slide the wire out, and refit it in the other position. After that, red is +12V and black is GND. [v1.1](../gnimu-can-obd-helper-v1.1/) swaps J2's pins on the board instead, so stock leads work as supplied.
+
+<table>
+  <tr>
+    <td align="center" valign="top" width="50%">
+      <img src="../../../images/gnimu-can-obd-helper-v1.0-assembled.jpeg" alt="An assembled v1.0 OBD-II helper board beside a straight-pin J1962 plug" width="340"><br>
+      <sub>Test assembly: D1 and both JST PH sockets fitted, beside the plug it mounts on.</sub>
+    </td>
+    <td align="center" valign="top" width="50%">
+      <img src="../../../images/gnimu-can-obd-helper-v1.0-fitted-unsoldered.jpeg" alt="The v1.0 OBD-II helper seated over the pins on the back of a J1962 plug, not yet soldered" width="340"><br>
+      <sub>Seated flush on the plug's flange, not yet soldered.</sub>
+    </td>
+  </tr>
+</table>
 
 ---
 
