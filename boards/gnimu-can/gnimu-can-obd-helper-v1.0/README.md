@@ -5,7 +5,7 @@ A small board that fits over the exposed pins on the back of a straight-pin J196
 It is part of the Gnimu-CAN telemetry reader. The CAN socket feeds either [CAN carrier](../); the 12V socket is needed only for the 12V carrier and can be left unpopulated for the LiPo one.
 
 > [!NOTE]
-> **Ordered, not yet tested.** v1.0 was ordered from OSH Park on 2026-10-24. Fit and assembly notes will be added once boards arrive and have been tried on a real plug.
+> **Fabricated; fit confirmed, not yet assembled.** v1.0 was ordered from OSH Park on 2026-10-24 and arrived 2026-11-05. The board slides snugly over a real plug's pins and sits flush on the flange; the two ground pins (4 and 5) only just poke through, as expected. Assembly and continuity notes will follow.
 
 > [!WARNING]
 > **J2's pin order doesn't match pre-made red/black JST PH leads.** On v1.0, J2 pin 1 is +12V and pin 2 is GND. The pre-crimped red/black PH leads bought for this project put black on pin 1 and red on pin 2, so plugged into v1.0 the **black wire carries +12V and the red wire is ground**. Check your own leads before plugging one in.

@@ -9,10 +9,10 @@ Boards for Gnimu-CAN, a work-in-progress telemetry reader that takes data from a
 
 | Board | Folder | Status |
 |---|---|---|
-| [**OBD-II helper v1.0**](gnimu-can-obd-helper-v1.0/) | `gnimu-can-obd-helper-v1.0/` | Ordered from OSH Park 2026-10-24. J2's +12V and GND pins are reversed relative to stock red/black leads; see its README. |
-| [**OBD-II helper v1.1**](gnimu-can-obd-helper-v1.1/) | `gnimu-can-obd-helper-v1.1/` | Layout complete. Not yet ordered. J2 swapped to pin 1 GND, pin 2 +12V; ground pour on both layers. |
+| [**OBD-II helper v1.0**](gnimu-can-obd-helper-v1.0/) | `gnimu-can-obd-helper-v1.0/` | Fabricated (ordered from OSH Park 2026-10-24). Fits the plug; not yet assembled. J2's +12V and GND pins are reversed relative to stock red/black leads; see its README. |
+| [**OBD-II helper v1.1**](gnimu-can-obd-helper-v1.1/) | `gnimu-can-obd-helper-v1.1/` | Ordered from OSH Park 2026-11-06. J2 swapped to pin 1 GND, pin 2 +12V; ground pour on both layers. |
 | **CAN carrier (XIAO), LiPo v1.0** | [`gnimu-can-carrier-xiao-lipo-v1.0/`](gnimu-can-carrier-xiao-lipo-v1.0/) | Layout complete and passing DRC. Not yet ordered. |
-| **CAN carrier (XIAO), 12V v1.0** | [`gnimu-can-carrier-xiao-12v-v1.0/`](gnimu-can-carrier-xiao-12v-v1.0/) | Layout complete and passing DRC. Not yet ordered. |
+| **CAN carrier (XIAO), 12V v1.0** | [`gnimu-can-carrier-xiao-12v-v1.0/`](gnimu-can-carrier-xiao-12v-v1.0/) | Ordered from OSH Park 2026-11-06. Gerbers in [`fabrication/`](gnimu-can-carrier-xiao-12v-v1.0/fabrication/). |
 
 ### OBD-II helper
 

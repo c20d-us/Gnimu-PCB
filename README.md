@@ -37,10 +37,10 @@ This repository holds the hardware only: KiCad projects, the shared symbol and f
 |---|---|---|---|
 | [**Gnimu carrier (XIAO)**](boards/gnimu/) | [v1.1](boards/gnimu/gnimu-carrier-xiao-v1.1/) | Seeed XIAO nRF52840 Sense | Current design. Gerbers not yet added. |
 | | [v1.0](boards/gnimu/gnimu-carrier-xiao-v1.0/) | Seeed XIAO nRF52840 Sense | Fabricated and built. Gerbers included. |
-| [**Gnimu-CAN OBD-II helper**](boards/gnimu-can/gnimu-can-obd-helper-v1.1/) | [v1.1](boards/gnimu-can/gnimu-can-obd-helper-v1.1/) | None | Layout complete. Not yet ordered. Swaps the 12V socket's pins to match stock leads. |
-| | [v1.0](boards/gnimu-can/gnimu-can-obd-helper-v1.0/) | None | Ordered 2026-10-24. 12V socket pins reversed; see its README. |
+| [**Gnimu-CAN OBD-II helper**](boards/gnimu-can/gnimu-can-obd-helper-v1.1/) | [v1.1](boards/gnimu-can/gnimu-can-obd-helper-v1.1/) | None | Ordered 2026-11-06. Swaps the 12V socket's pins to match stock leads. |
+| | [v1.0](boards/gnimu-can/gnimu-can-obd-helper-v1.0/) | None | Fabricated. Fits the plug; not yet assembled. 12V socket pins reversed; see its README. |
 | [**Gnimu-CAN carrier (XIAO)**](boards/gnimu-can/) | [LiPo v1.0](boards/gnimu-can/gnimu-can-carrier-xiao-lipo-v1.0/) | Seeed XIAO ESP32C6 | Layout complete. Not yet ordered. |
-| | [12V v1.0](boards/gnimu-can/gnimu-can-carrier-xiao-12v-v1.0/) | Seeed XIAO ESP32C6 | Layout complete. Not yet ordered. |
+| | [12V v1.0](boards/gnimu-can/gnimu-can-carrier-xiao-12v-v1.0/) | Seeed XIAO ESP32C6 | Ordered 2026-11-06. Gerbers included. |
 
 Every board is two-layer and built for hand assembly. The carriers are through-hole only, built around off-the-shelf modules that solder straight onto them; the OBD-II helper adds one SOT-23 part.
 

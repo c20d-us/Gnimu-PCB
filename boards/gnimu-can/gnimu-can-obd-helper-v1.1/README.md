@@ -5,7 +5,7 @@ A small board that fits over the exposed pins on the back of a straight-pin J196
 It is part of the Gnimu-CAN telemetry reader. The CAN socket feeds either [CAN carrier](../); the 12V socket is needed only for the 12V carrier and can be left unpopulated for the LiPo one.
 
 > [!NOTE]
-> **Not yet ordered.** v1.1 has passed ERC and DRC but hasn't been fabricated.
+> **Ordered, not yet received.** v1.1 was ordered from OSH Park on 2026-11-06. It uses the same plug footprint and outline as v1.0, whose fit has been confirmed on a real plug.
 
 ## Changes from v1.0
 
@@ -100,9 +100,9 @@ The square ground pads and 45° spokes are set on this board's copies of the foo
 
 ## Fabrication
 
-The KiCad project is the source. v1.1 hasn't been ordered yet; gerbers will go in a `fabrication/` folder when it is.
+The KiCad project is the source. [`fabrication/`](fabrication/) holds gerbers that capture the design as sent.
 
-v1.0 was ordered from OSH Park's standard 2-layer service by uploading the `.kicad_pcb` file directly, and the same works for v1.1. OSH Park detects and supports the plated slots.
+v1.1 was ordered from OSH Park's standard 2-layer service on 2026-11-06, the same way as v1.0. OSH Park detects and supports the plated slots.
 
 > [!IMPORTANT]
 > OSH Park does not refill KiCad zones. If you upload the `.kicad_pcb`, refill the zones (press **B** in the PCB editor) and save first, or the ground pour may be stale.
