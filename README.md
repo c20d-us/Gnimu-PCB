@@ -77,6 +77,6 @@ This source is distributed WITHOUT ANY EXPRESS OR IMPLIED WARRANTY, INCLUDING OF
 
 The Gnimu firmware is a separate work under its own license; see the [Gnimu](https://github.com/c20d-us/Gnimu) repository.
 
-The Gnimu name and logo, including the silkscreen logo on the boards, are not covered by this license. You may leave the logo on a board made from an unmodified design. If you modify a design, remove the logo. See the [Gnimu branding usage policy](https://github.com/c20d-us/Gnimu-branding/blob/main/LICENSE.md).
+The Gnimu and Gnimu Labs names and logos, including the silkscreen logo on the boards, are not covered by this license. You may leave the logo on a board made from an unmodified design. If you modify a design, remove the logo. See the [Gnimu Labs branding usage policy](https://github.com/c20d-us/Gnimu-branding/blob/main/LICENSE.md).
 
 [CERN-OHL-S_v2]: https://ohwr.org/cern_ohl_s_v2.txt
