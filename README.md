@@ -12,22 +12,9 @@
 ![Open Source Hardware](https://img.shields.io/badge/Open%20Source-Hardware-2E7D32?logo=opensourcehardware&logoColor=white)
 ![KiCad](https://img.shields.io/badge/KiCad-10-314CB0?logo=kicad&logoColor=white)
 
-Circuit boards for [Gnimu](https://github.com/c20d-us/Gnimu), a GNSS+IMU motorsports telemetry device that streams live position, speed, and motion data over BLE.
+Circuit boards for various Gnimu Labs projects: [Gnimu](https://github.com/c20d-us/Gnimu), a GNSS+IMU motorsports telemetry device that streams live position, speed, and motion data over BLE; and [Gnimu CAN](https://github.com/c20d-us/Gnimu-CAN), a BLE streaming telemetry device for automotive CAN bus data, either via OBD-II or directly from the bus.
 
 This repository holds the hardware only: KiCad projects, the shared symbol and footprint library, and fabrication outputs. The firmware, the bill of materials, and the step-by-step build guides live in the [Gnimu](https://github.com/c20d-us/Gnimu) repository.
-
-<table>
-  <tr>
-    <td align="center" valign="top" width="50%">
-      <img src="images/gnimu-carrier-xiao-v1-bare-pcb.jpeg" alt="The bare Gnimu carrier PCB, front and back" width="340"><br>
-      <sub>The bare carrier (revision v1.0), front and back.</sub>
-    </td>
-    <td align="center" valign="top" width="50%">
-      <img src="images/gnimu-carrier-xiao-v1-loaded-pcb.jpeg" alt="The Gnimu carrier PCB with the XIAO, regulator, resistors and leads fitted" width="340"><br>
-      <sub>Loaded: the XIAO, the XL63070 regulator, the two resistors, and leads.</sub>
-    </td>
-  </tr>
-</table>
 
 ---
 
@@ -37,10 +24,10 @@ This repository holds the hardware only: KiCad projects, the shared symbol and f
 |---|---|---|---|
 | [**Gnimu carrier (XIAO)**](boards/gnimu/) | [v1.1](boards/gnimu/gnimu-carrier-xiao-v1.1/) | Seeed XIAO nRF52840 Sense | Current design. Gerbers not yet added. |
 | | [v1.0](boards/gnimu/gnimu-carrier-xiao-v1.0/) | Seeed XIAO nRF52840 Sense | Fabricated and built. Gerbers included. |
-| [**Gnimu-CAN OBD-II helper**](boards/gnimu-can/gnimu-can-obd-helper-v1.1/) | [v1.1](boards/gnimu-can/gnimu-can-obd-helper-v1.1/) | None | Ordered from OSH Park. Swaps the 12V socket's pins to match stock leads. |
+| [**Gnimu-CAN OBD-II helper**](boards/gnimu-can/gnimu-can-obd-helper-v1.1/) | [v1.1](boards/gnimu-can/gnimu-can-obd-helper-v1.1/) | None | Fabricated and assembled. Swaps the 12V socket's pins to match stock leads. |
 | | [v1.0](boards/gnimu-can/gnimu-can-obd-helper-v1.0/) | None | Fabricated. Fit and test assembly confirmed. 12V socket pins reversed; see its README. |
 | [**Gnimu-CAN carrier (XIAO)**](boards/gnimu-can/) | [LiPo v1.0](boards/gnimu-can/gnimu-can-carrier-xiao-lipo-v1.0/) | Seeed XIAO ESP32C6 | Layout complete. Not yet ordered. |
-| | [12V v1.0](boards/gnimu-can/gnimu-can-carrier-xiao-12v-v1.0/) | Seeed XIAO ESP32C6 | Ordered from OSH Park. Gerbers included. |
+| | [12V v1.0](boards/gnimu-can/gnimu-can-carrier-xiao-12v-v1.0/) | Seeed XIAO ESP32C6 | Fabricated and assembled. Gerbers included. |
 
 Every board is two-layer and built for hand assembly. The carriers are through-hole only, built around off-the-shelf modules that solder straight onto them; the OBD-II helper adds one SOT-23 part.
 

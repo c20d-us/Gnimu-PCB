@@ -3,16 +3,18 @@
 Boards for Gnimu-CAN, a work-in-progress telemetry reader that takes data from a car's CAN bus through its OBD-II port, or directly from the CAN bus's CAN-H/CAN-L. The device uses a Seeed XIAO ESP32C6 MCU with an Adafruit CAN Pal transceiver. It runs either from its own LiPo battery or from the car's 12V supply, depending on which carrier it's built on.
 
 > [!NOTE]
-> **Work in progress.** Anything here may change. No boards other than the OBD-II Helper board have been sent to a fab.
+> **Work in progress.** Anything here may change. The OBD-II helper and the 12V carrier have been fabricated and assembled; the LiPo carrier hasn't been sent to a fab.
+
+<img src="../../images/gnimu-can-carrier-obd-loaded-pcb.jpeg" alt="The assembled 12V carrier with its CAN and 12V pigtails, beside a v1.1 OBD-II helper soldered onto a J1962 plug" width="420">
 
 ## Boards
 
 | Board | Folder | Status |
 |---|---|---|
 | [**OBD-II helper v1.0**](gnimu-can-obd-helper-v1.0/) | `gnimu-can-obd-helper-v1.0/` | Fabricated by OSH Park. Fit and test assembly confirmed. J2's +12V and GND pins are reversed relative to stock red/black leads; see its README. |
-| [**OBD-II helper v1.1**](gnimu-can-obd-helper-v1.1/) | `gnimu-can-obd-helper-v1.1/` | Ordered from OSH Park. J2 swapped to pin 1 GND, pin 2 +12V; ground pour on both layers. |
+| [**OBD-II helper v1.1**](gnimu-can-obd-helper-v1.1/) | `gnimu-can-obd-helper-v1.1/` | Fabricated by OSH Park and assembled on a plug. J2 swapped to pin 1 GND, pin 2 +12V; ground pour on both layers. |
 | **CAN carrier (XIAO), LiPo v1.0** | [`gnimu-can-carrier-xiao-lipo-v1.0/`](gnimu-can-carrier-xiao-lipo-v1.0/) | Layout complete and passing DRC. Not yet ordered. |
-| [**CAN carrier (XIAO), 12V v1.0**](gnimu-can-carrier-xiao-12v-v1.0/) | `gnimu-can-carrier-xiao-12v-v1.0/` | Ordered from OSH Park. Gerbers in [`fabrication/`](gnimu-can-carrier-xiao-12v-v1.0/fabrication/). |
+| [**CAN carrier (XIAO), 12V v1.0**](gnimu-can-carrier-xiao-12v-v1.0/) | `gnimu-can-carrier-xiao-12v-v1.0/` | Fabricated by OSH Park and assembled. Gerbers in [`fabrication/`](gnimu-can-carrier-xiao-12v-v1.0/fabrication/). |
 
 ### OBD-II helper
 

@@ -4,8 +4,18 @@ A two-layer, through-hole carrier for the Gnimu-CAN telemetry reader. It holds a
 
 For a version that runs from its own LiPo and takes only CAN from the car, see the [LiPo carrier](../gnimu-can-carrier-xiao-lipo-v1.0/).
 
-> [!NOTE]
-> **Ordered, not yet received.** v1.0 was ordered from OSH Park. Assembly notes will be added once boards arrive.
+<table>
+  <tr>
+    <td align="center" valign="top" width="50%">
+      <img src="../../../images/gnimu-can-carrier-xiao-12v-v1.0-bare-pcb.jpeg" alt="The bare 12V carrier PCB, front and back" width="340"><br>
+      <sub>The bare board, front and back.</sub>
+    </td>
+    <td align="center" valign="top" width="50%">
+      <img src="../../../images/gnimu-can-carrier-obd-loaded-pcb.jpeg" alt="The assembled 12V carrier with its CAN and 12V pigtails, beside a v1.1 OBD-II helper soldered onto a J1962 plug" width="340"><br>
+      <sub>Assembled on standoffs, alongside a v1.1 OBD helper on its plug.. J3 (switch) wiring exits on the underside of the board.</sub>
+    </td>
+  </tr>
+</table>
 
 ---
 
@@ -98,6 +108,3 @@ R1 pulls `CAN_SILENT` high, so the transceiver stays in listen-only mode until t
 The KiCad project is the source. [`fabrication/`](fabrication/) holds gerbers that capture the design as sent.
 
 v1.0 was ordered from OSH Park's standard 2-layer service: 1.6 mm board, 1 oz copper. Three boards cost $19.05 shipped.
-
-> [!IMPORTANT]
-> OSH Park does not refill KiCad zones. If you upload the `.kicad_pcb`, refill the zones (press **B** in the PCB editor) and save first, or the ground pour may be stale.
